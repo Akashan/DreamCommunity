@@ -36,6 +36,13 @@ class User
     private $mdp;
 
     /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="lastLogin", type="datetime")
+     */
+    private $lastLogin;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="nom", type="string", length=255)
@@ -43,11 +50,18 @@ class User
     private $nom;
 
     /**
-     * @var \DateTime
+     * @var string
      *
-     * @ORM\Column(name="lastLogin", type="datetime")
+     * @ORM\Column(name="description", type="text")
      */
-    private $lastLogin;
+    private $description;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="image", type="string")
+     */
+    private $image;
 
     /**
      * @var string
@@ -388,5 +402,51 @@ class User
     public function getRole()
     {
         return $this->role;
+    }
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     * @return User
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string 
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * Set image
+     *
+     * @param string $image
+     * @return User
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+    
+        return $this;
+    }
+
+    /**
+     * Get image
+     *
+     * @return string 
+     */
+    public function getImage()
+    {
+        return $this->image;
     }
 }

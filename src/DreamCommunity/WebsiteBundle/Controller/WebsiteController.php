@@ -1,6 +1,7 @@
 <?php
 namespace DreamCommunity\WebsiteBundle\Controller;
 
+use DreamCommunity\WebsiteBundle\Entity\User;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -16,7 +17,14 @@ class WebsiteController extends Controller
     }
     public function membreAction($id)
     {
-        return $this->render('DreamCommunityWebsiteBundle:Website:membre.html.twig', array());
+        $membre = new User();
+        $membre->setNom("Akashan");
+        $membre->setUrlYoutube("yt");
+        $membre->setUrlOther("other");
+        $membre->setImage("twitter.png");
+        $membre->setDescription("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tristique diam non blandit pellentesque. Curabitur et mi vel arcu ultrices accumsan. In mollis libero nec purus facilisis scelerisque. Fusce vel metus vitae ipsum mattis vehicula. Sed sagittis egestas nibh, vitae consectetur ipsum mattis porttitor. Etiam nec elit eu orci condimentum tempor. Suspendisse eleifend mi justo, at fermentum lectus lacinia vel.");
+
+        return $this->render('DreamCommunityWebsiteBundle:Website:membre.html.twig', array( 'membre' => $membre));
     }
     public function videosAction()
     {
