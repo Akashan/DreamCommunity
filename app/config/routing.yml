@@ -1,0 +1,4 @@
+dream_community_website:
+    resource: "@DreamCommunityWebsiteBundle/Resources/config/routing.yml"
+    prefix:   /
+

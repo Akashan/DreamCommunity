@@ -1,0 +1,30 @@
+dream_community_website_accueil:
+    pattern:  /{id}
+    defaults: { _controller: DreamCommunityWebsiteBundle:Website:index, id: 1 }
+    requirements:
+        id:  \d+
+dream_community_website_membres:
+    pattern:  /membres
+    defaults: { _controller: DreamCommunityWebsiteBundle:Website:membres }
+dream_community_website_membre:
+    pattern:  /membre/{id}
+    defaults: { _controller: DreamCommunityWebsiteBundle:Website:membre }
+    requirements:
+        id:  \d+
+dream_community_website_videos:
+    pattern:  /videos
+    defaults: { _controller: DreamCommunityWebsiteBundle:Website:videos }
+dream_community_website_video:
+    pattern:  /video/{id}
+    defaults: { _controller: DreamCommunityWebsiteBundle:Website:video }
+    requirements:
+        id:  \d+
+dream_community_website_forum:
+    pattern:  /forum
+    defaults: { _controller: DreamCommunityWebsiteBundle:Website:forum }
+dream_community_website_contacts:
+    pattern:  /contacts
+    defaults: { _controller: DreamCommunityWebsiteBundle:Website:contacts }
+dream_community_website_liens:
+    pattern:  /liens
+    defaults: { _controller: DreamCommunityWebsiteBundle:Website:liens }
