@@ -11,6 +11,12 @@ dream_community_website_membre:
     defaults: { _controller: DreamCommunityWebsiteBundle:Website:membre }
     requirements:
         id:  \d+
+
+dream_community_website_membre_videos:
+    pattern:  /membre/{id}/videos
+    defaults: { _controller: DreamCommunityWebsiteBundle:Website:membreVideos }
+    requirements:
+        id:  \d+
 dream_community_website_videos:
     pattern:  /videos
     defaults: { _controller: DreamCommunityWebsiteBundle:Website:videos }
@@ -19,6 +25,7 @@ dream_community_website_video:
     defaults: { _controller: DreamCommunityWebsiteBundle:Website:video }
     requirements:
         id:  \d+
+
 dream_community_website_forum:
     pattern:  /forum
     defaults: { _controller: DreamCommunityWebsiteBundle:Website:forum }
@@ -28,3 +35,28 @@ dream_community_website_contacts:
 dream_community_website_liens:
     pattern:  /liens
     defaults: { _controller: DreamCommunityWebsiteBundle:Website:liens }
+
+dream_community_website_ajout_video:
+    pattern:  /ajouter/video
+    defaults: { _controller: DreamCommunityWebsiteBundle:Website:ajoutVideo }
+dream_community_website_modif_video:
+    pattern:  /modifier/video/{id}
+    defaults: { _controller: DreamCommunityWebsiteBundle:Website:modifVideo }
+    requirements:
+        id:  \d+
+dream_community_website_supprim_video:
+    pattern:  /supprime/video/{id}
+    defaults: { _controller: DreamCommunityWebsiteBundle:Website:supprimVideo }
+    requirements:
+        id:  \d+
+
+dream_community_website_vue_profil:
+    pattern:  /monprofil
+    defaults: { _controller: DreamCommunityWebsiteBundle:Website:vueProfil }
+dream_community_website_modif_profil:
+    pattern:  /monprofil/modifier
+    defaults: { _controller: DreamCommunityWebsiteBundle:Website:modifierProfil }
+
+dream_community_website_mes_videos:
+    pattern:  /monprofil/videos
+    defaults: { _controller: DreamCommunityWebsiteBundle:Website:mesVideos }

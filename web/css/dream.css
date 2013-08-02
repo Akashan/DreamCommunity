@@ -30,7 +30,8 @@ footer a:hover {
 }
 
 .menu-area {
-    padding:3px;
+    padding-left:3px;
+    padding-right:3px;
     border: 1px solid #666;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -40,7 +41,8 @@ footer a:hover {
 }
 
 .content-area {
-    padding:3px;
+    padding-left:3px;
+    padding-right:3px;
     margin-bottom:10px;
     border: 1px solid #666;
     -webkit-border-radius: 10px;

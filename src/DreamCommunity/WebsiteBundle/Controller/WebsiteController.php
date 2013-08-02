@@ -2,6 +2,7 @@
 namespace DreamCommunity\WebsiteBundle\Controller;
 
 use DreamCommunity\WebsiteBundle\Entity\User;
+use DreamCommunity\WebsiteBundle\Entity\Video;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -28,11 +29,34 @@ class WebsiteController extends Controller
     }
     public function videosAction()
     {
-        return $this->render('DreamCommunityWebsiteBundle:Website:videos.html.twig', array());
+        $user = new User();
+        $user->setNom("moi");
+
+        $liste = array();
+
+        for($i = 0; $i <= 10; $i++)
+        {
+            $video = new Video();
+            $video->setTitre("Titre de ma vidéo");
+            $video->setMiniature("sldkjf");
+            $video->setUser($user);
+
+            $liste[] = $video;
+        }
+
+        return $this->render('DreamCommunityWebsiteBundle:Website:videos.html.twig', array('liste_videos' => $liste));
     }
     public function videoAction($id)
     {
-        return $this->render('DreamCommunityWebsiteBundle:Website:video.html.twig', array());
+        $user = new User();
+        $user->setNom("moi");
+
+        $video = new Video();
+        $video->setTitre("Titre de ma vidéo");
+        $video->setMiniature("sldkjf");
+        $video->setUser($user);
+
+        return $this->render('DreamCommunityWebsiteBundle:Website:video.html.twig', array('video' => $video));
     }
     public function forumAction()
     {
@@ -47,6 +71,29 @@ class WebsiteController extends Controller
         return $this->render('DreamCommunityWebsiteBundle:Website:liens.html.twig', array());
     }
 
+    public function ajoutVideoAction(){
+        return $this->render('DreamCommunityWebsiteBundle:Website:ajoutVideo.html.twig', array());
+    }
+    public function modifVideoAction($id){
+        return $this->render('DreamCommunityWebsiteBundle:Website:modifVideo.html.twig', array());
+    }
+    public function supprimVideoAction($id){
+        return $this->render('DreamCommunityWebsiteBundle:Website:supprimVideo.html.twig', array());
+    }
+
+    public function vueProfilAction(){
+        return $this->render('DreamCommunityWebsiteBundle:Website:vueProfil.html.twig', array());
+    }
+    public function modifProfilAction(){
+        return $this->render('DreamCommunityWebsiteBundle:Website:modifProfil.html.twig', array());
+    }
+    public function mesVideosAction(){
+        return $this->render('DreamCommunityWebsiteBundle:Website:mesVideos.html.twig', array());
+    }
+
+    public function menuAdminAction(){
+        return $this->render('DreamCommunityWebsiteBundle:Website:menuAdmin.html.twig');
+    }
     public function menuAction($nb)
     {
         // On fixe en dur une liste ici, bien entendu par la suite on la récupérera depuis la BDD !
