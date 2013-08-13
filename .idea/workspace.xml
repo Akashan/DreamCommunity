@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc054e20-59a2-496a-9f78-b9d733bfe4d3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/menuAdmin.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/Video.php" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/Video.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/ajoutVideo.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/mesVideos.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/modifProfil.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/modifVideo.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/supprimVideo.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/vueProfil.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Controller/WebsiteController.php" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Controller/WebsiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/dream.css" afterPath="$PROJECT_DIR$/web/css/dream.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/layout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/config.php" afterPath="$PROJECT_DIR$/web/config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/membre.html.twig" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/membre.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/video.html.twig" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/video.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/videos.html.twig" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/videos.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/membres.html.twig" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/membres.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DreamCommunity.iws" />
@@ -21,14 +21,14 @@
     <file path="/a.dummy" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375368231098" ignored="false" />
     <file path="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375276509388" ignored="false" />
     <file path="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375276509388" ignored="false" />
-    <file path="/WebsiteController.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375452736371" ignored="false" />
+    <file path="/WebsiteController.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376382423786" ignored="false" />
     <file path="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375282206822" ignored="false" />
     <file path="/index.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375285724312" ignored="false" />
     <file path="/layout.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375450354756" ignored="false" />
     <file path="/menu.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375285369966" ignored="false" />
-    <file path="/membres.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375286708086" ignored="false" />
-    <file path="/Dummy.txt" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375457863924" ignored="false" />
-    <file path="/membre.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375437193784" ignored="false" />
+    <file path="/membres.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376382344094" ignored="false" />
+    <file path="/Dummy.txt" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376407810010" ignored="false" />
+    <file path="/membre.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376382217196" ignored="false" />
     <file path="/videos.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375446829156" ignored="false" />
     <file path="/video.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375447072812" ignored="false" />
     <file path="/contacts.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375365027056" ignored="false" />
@@ -41,6 +41,12 @@
     <file path="/Video.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375437370049" ignored="false" />
     <file path="/dream.css" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375452956883" ignored="false" />
     <file path="/menuAdmin.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375451736519" ignored="false" />
+    <file path="/vueProfil.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376381412721" ignored="false" />
+    <file path="/modifProfil.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376381478021" ignored="false" />
+    <file path="/ajoutVideo.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376381554406" ignored="false" />
+    <file path="/mesVideos.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376381547391" ignored="false" />
+    <file path="/modifVideo.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376381598490" ignored="false" />
+    <file path="/supprimVideo.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376381619786" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,257 +70,7 @@
     <favorites_list name="DreamCommunity" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/config/routing.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="74" selection-start="1980" selection-end="1989" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebsiteController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Controller/WebsiteController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="40" selection-start="2885" selection-end="2885" vertical-scroll-proportion="-12.423077">
-              <folding>
-                <element signature="e#306#444#0" expanded="false" />
-                <element signature="e#449#588#0" expanded="false" />
-                <element signature="e#593#1397#0" expanded="false" />
-                <element signature="e#826#1274#0" expanded="false" />
-                <element signature="e#1402#1903#0" expanded="false" />
-                <element signature="e#1533#1777#0" expanded="false" />
-                <element signature="e#1908#2272#0" expanded="false" />
-                <element signature="e#2277#2412#0" expanded="false" />
-                <element signature="e#2417#2558#0" expanded="false" />
-                <element signature="e#2563#2698#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="video.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/video.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="14" selection-start="3928" selection-end="3928" vertical-scroll-proportion="-10.461538">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="0" selection-start="2116" selection-end="2116" vertical-scroll-proportion="-9.692307">
-              <folding>
-                <element signature="e#89#208#0" expanded="false" />
-                <element signature="e#226#369#0" expanded="false" />
-                <element signature="e#392#489#0" expanded="false" />
-                <element signature="e#515#610#0" expanded="false" />
-                <element signature="e#634#728#0" expanded="false" />
-                <element signature="e#758#853#0" expanded="false" />
-                <element signature="e#877#966#0" expanded="false" />
-                <element signature="e#998#1083#0" expanded="false" />
-                <element signature="e#1109#1206#0" expanded="false" />
-                <element signature="e#1232#1334#0" expanded="false" />
-                <element signature="e#1365#1467#0" expanded="false" />
-                <element signature="e#1498#1601#0" expanded="false" />
-                <element signature="e#1633#1733#0" expanded="false" />
-                <element signature="e#1762#1849#0" expanded="false" />
-                <element signature="e#1875#1968#0" expanded="false" />
-                <element signature="e#2000#2091#0" expanded="false" />
-                <element signature="e#2121#2254#0" expanded="false" />
-                <element signature="e#2279#2335#0" expanded="false" />
-                <element signature="e#2340#2401#0" expanded="false" />
-                <element signature="e#2407#2490#0" expanded="false" />
-                <element signature="e#2495#2597#0" expanded="false" />
-                <element signature="e#2603#2661#0" expanded="false" />
-                <element signature="e#2666#2733#0" expanded="false" />
-                <element signature="e#2739#2818#0" expanded="false" />
-                <element signature="e#2823#2917#0" expanded="false" />
-                <element signature="e#2923#2979#0" expanded="false" />
-                <element signature="e#2984#3047#0" expanded="false" />
-                <element signature="e#3053#3132#0" expanded="false" />
-                <element signature="e#3137#3231#0" expanded="false" />
-                <element signature="e#3237#3293#0" expanded="false" />
-                <element signature="e#3298#3361#0" expanded="false" />
-                <element signature="e#3367#3461#0" expanded="false" />
-                <element signature="e#3466#3584#0" expanded="false" />
-                <element signature="e#3590#3655#0" expanded="false" />
-                <element signature="e#3660#3735#0" expanded="false" />
-                <element signature="e#3741#3824#0" expanded="false" />
-                <element signature="e#3829#3931#0" expanded="false" />
-                <element signature="e#3937#3995#0" expanded="false" />
-                <element signature="e#4000#4067#0" expanded="false" />
-                <element signature="e#4073#4166#0" expanded="false" />
-                <element signature="e#4171#4289#0" expanded="false" />
-                <element signature="e#4295#4357#0" expanded="false" />
-                <element signature="e#4362#4439#0" expanded="false" />
-                <element signature="e#4445#4538#0" expanded="false" />
-                <element signature="e#4543#4661#0" expanded="false" />
-                <element signature="e#4667#4729#0" expanded="false" />
-                <element signature="e#4734#4811#0" expanded="false" />
-                <element signature="e#4817#4912#0" expanded="false" />
-                <element signature="e#4917#5039#0" expanded="false" />
-                <element signature="e#5045#5108#0" expanded="false" />
-                <element signature="e#5113#5192#0" expanded="false" />
-                <element signature="e#5198#5287#0" expanded="false" />
-                <element signature="e#5292#5402#0" expanded="false" />
-                <element signature="e#5408#5468#0" expanded="false" />
-                <element signature="e#5473#5546#0" expanded="false" />
-                <element signature="e#5552#5636#0" expanded="false" />
-                <element signature="e#5641#5739#0" expanded="false" />
-                <element signature="e#5745#5803#0" expanded="false" />
-                <element signature="e#5808#5875#0" expanded="false" />
-                <element signature="e#5881#5973#0" expanded="false" />
-                <element signature="e#5978#6096#0" expanded="false" />
-                <element signature="e#6102#6165#0" expanded="false" />
-                <element signature="e#6170#6245#0" expanded="false" />
-                <element signature="e#6251#6371#0" expanded="false" />
-                <element signature="e#6376#6520#0" expanded="false" />
-                <element signature="e#6526#6622#0" expanded="false" />
-                <element signature="e#6627#6692#0" expanded="false" />
-                <element signature="e#6698#6793#0" expanded="false" />
-                <element signature="e#6798#6924#0" expanded="false" />
-                <element signature="e#6930#6994#0" expanded="false" />
-                <element signature="e#6999#7078#0" expanded="false" />
-                <element signature="e#7084#7167#0" expanded="false" />
-                <element signature="e#7172#7274#0" expanded="false" />
-                <element signature="e#7280#7338#0" expanded="false" />
-                <element signature="e#7343#7410#0" expanded="false" />
-                <element signature="e#7416#7512#0" expanded="false" />
-                <element signature="e#7517#7643#0" expanded="false" />
-                <element signature="e#7649#7714#0" expanded="false" />
-                <element signature="e#7719#7798#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dream.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/dream.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="4" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.html.twig" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/layout.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="25" selection-start="1789" selection-end="1789" vertical-scroll-proportion="0.33086875">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menuAdmin.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/menuAdmin.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="61" selection-start="438" selection-end="438" vertical-scroll-proportion="-4.576923">
-              <folding>
-                <element signature="n#style#0;n#ul#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="videos.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/videos.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="70" selection-start="371" selection-end="371" vertical-scroll-proportion="-8.5">
-              <folding>
-                <element signature="e#268#299#0" expanded="true" />
-                <element signature="e#403#426#0" expanded="true" />
-                <element signature="e#458#498#0" expanded="true" />
-                <element signature="e#585#640#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/menu.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="304" selection-end="304" vertical-scroll-proportion="-3.2692308">
-              <folding>
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Video.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/Video.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="0" selection-start="1388" selection-end="1388" vertical-scroll-proportion="-14.5">
-              <folding>
-                <element signature="e#89#210#0" expanded="false" />
-                <element signature="e#229#372#0" expanded="false" />
-                <element signature="e#395#495#0" expanded="false" />
-                <element signature="e#524#621#0" expanded="false" />
-                <element signature="e#647#748#0" expanded="false" />
-                <element signature="e#778#867#0" expanded="false" />
-                <element signature="e#899#996#0" expanded="false" />
-                <element signature="e#1029#1129#0" expanded="false" />
-                <element signature="e#1165#1251#0" expanded="false" />
-                <element signature="e#1280#1367#0" expanded="false" />
-                <element signature="e#1393#1484#0" expanded="false" />
-                <element signature="e#1514#1643#0" expanded="false" />
-                <element signature="e#1668#1724#0" expanded="false" />
-                <element signature="e#1729#1790#0" expanded="false" />
-                <element signature="e#1796#1886#0" expanded="false" />
-                <element signature="e#1891#2005#0" expanded="false" />
-                <element signature="e#2011#2072#0" expanded="false" />
-                <element signature="e#2077#2150#0" expanded="false" />
-                <element signature="e#2156#2240#0" expanded="false" />
-                <element signature="e#2245#2347#0" expanded="false" />
-                <element signature="e#2353#2411#0" expanded="false" />
-                <element signature="e#2416#2483#0" expanded="false" />
-                <element signature="e#2489#2585#0" expanded="false" />
-                <element signature="e#2590#2716#0" expanded="false" />
-                <element signature="e#2722#2786#0" expanded="false" />
-                <element signature="e#2791#2870#0" expanded="false" />
-                <element signature="e#2876#2977#0" expanded="false" />
-                <element signature="e#2982#3112#0" expanded="false" />
-                <element signature="e#3118#3186#0" expanded="false" />
-                <element signature="e#3191#3272#0" expanded="false" />
-                <element signature="e#3278#3385#0" expanded="false" />
-                <element signature="e#3390#3532#0" expanded="false" />
-                <element signature="e#3538#3609#0" expanded="false" />
-                <element signature="e#3614#3701#0" expanded="false" />
-                <element signature="e#3707#3796#0" expanded="false" />
-                <element signature="e#3801#3915#0" expanded="false" />
-                <element signature="e#3921#3981#0" expanded="false" />
-                <element signature="e#3986#4059#0" expanded="false" />
-                <element signature="e#4065#4150#0" expanded="false" />
-                <element signature="e#4155#4257#0" expanded="false" />
-                <element signature="e#4263#4322#0" expanded="false" />
-                <element signature="e#4327#4394#0" expanded="false" />
-                <element signature="e#4400#4493#0" expanded="false" />
-                <element signature="e#4498#4616#0" expanded="false" />
-                <element signature="e#4622#4685#0" expanded="false" />
-                <element signature="e#4690#4765#0" expanded="false" />
-                <element signature="e#4771#4888#0" expanded="false" />
-                <element signature="e#4893#5033#0" expanded="false" />
-                <element signature="e#5039#5131#0" expanded="false" />
-                <element signature="e#5136#5201#0" expanded="false" />
-                <element signature="e#5207#5299#0" expanded="false" />
-                <element signature="e#5304#5422#0" expanded="false" />
-                <element signature="e#5428#5490#0" expanded="false" />
-                <element signature="e#5495#5570#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -333,22 +89,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/liens.html.twig" />
-        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/Function.php" />
-        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/FonctionRepository.php" />
-        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/RoleFunction.php" />
-        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/UserRole.php" />
-        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/Fonction.php" />
-        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/membre.html.twig" />
-        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/Video.php" />
-        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/videos.html.twig" />
         <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/video.html.twig" />
         <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/menuAdmin.html.twig" />
         <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Controller/WebsiteController.php" />
         <option value="$PROJECT_DIR$/web/css/dream.css" />
+        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/vueProfil.html.twig" />
+        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/modifProfil.html.twig" />
+        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/mesVideos.html.twig" />
+        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/ajoutVideo.html.twig" />
+        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/modifVideo.html.twig" />
+        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/supprimVideo.html.twig" />
+        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/membre.html.twig" />
+        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/membres.html.twig" />
+        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Controller/WebsiteController.php" />
+        <option value="$PROJECT_DIR$/web/config.php" />
       </list>
     </option>
   </component>
@@ -389,7 +145,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -450,154 +205,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebsiteBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebsiteBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebsiteBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebsiteBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebsiteBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -606,23 +220,33 @@
     <property name="options.lastSelected" value="vcs.Git" />
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../bin/php/php5.4.16" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/cache/prod" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
-  <component name="PublishConfig">
+  <component name="PublishConfig" serverName="Dream Community" serverId="e3e2bf7c-9900-4987-9c35-89a6f29c330c" createEmptyFolders="true">
     <servers>
       <server id="e3e2bf7c-9900-4987-9c35-89a6f29c330c">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" />
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
+          <excludedPaths>
+            <ExcludedPath>
+              <option name="local" value="true" />
+              <option name="path" value="C:\wamp\www\DreamCommunity\app\cache\dev\" />
+            </ExcludedPath>
+            <ExcludedPath>
+              <option name="local" value="true" />
+              <option name="path" value="C:\wamp\www\DreamCommunity\app\cache\prod\" />
+            </ExcludedPath>
+          </excludedPaths>
         </serverdata>
       </server>
     </servers>
@@ -643,10 +267,10 @@
     <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application">
       <method />
     </configuration>
-    <configuration default="true" type="PhpHttpRequestRunConfigurationType" factoryName="PHP HTTP Request">
+    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug">
       <method />
     </configuration>
-    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug">
+    <configuration default="true" type="PhpHttpRequestRunConfigurationType" factoryName="PHP HTTP Request">
       <method />
     </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
@@ -668,14 +292,14 @@
       <JdkChoice value="FROM_MODULE" />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="e3e2bf7c-9900-4987-9c35-89a6f29c330c" server_name="Dream Community">
       <method />
     </configuration>
     <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
@@ -730,7 +354,11 @@
       <created>1375373551480</created>
       <updated>1375373551480</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Membre view">
+      <created>1375457872441</created>
+      <updated>1375457872441</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -757,19 +385,20 @@
     <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287827" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32536975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3249715" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249694" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1891065" sideWeight="0.6704675" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249694" sideWeight="0.67388827" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32839224" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249694" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249694" sideWeight="0.67007965" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -821,7 +450,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Membre view" />
+    <option name="LAST_COMMIT_MESSAGE" value="Création des dernières pages" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -838,6 +467,7 @@
     <MESSAGE value="Views create" />
     <MESSAGE value="Entities create" />
     <MESSAGE value="Membre view" />
+    <MESSAGE value="Création des dernières pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -845,265 +475,156 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/FonctionRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="5" selection-start="100" selection-end="100" vertical-scroll-proportion="0.14424242" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/RoleFunction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="5" selection-start="1234" selection-end="1234" vertical-scroll-proportion="0.4060606" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/UserRole.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="7" selection-start="1579" selection-end="1579" vertical-scroll-proportion="0.7418182" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/Fonction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="17" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.58768654" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.4081147">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/membre.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="16" selection-start="189" selection-end="189" vertical-scroll-proportion="0.14389358">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/video.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="14" selection-start="3928" selection-end="3928" vertical-scroll-proportion="-10.461538">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="0" selection-start="2116" selection-end="2116" vertical-scroll-proportion="-9.692307">
-          <folding>
-            <element signature="e#89#208#0" expanded="false" />
-            <element signature="e#226#369#0" expanded="false" />
-            <element signature="e#392#489#0" expanded="false" />
-            <element signature="e#515#610#0" expanded="false" />
-            <element signature="e#634#728#0" expanded="false" />
-            <element signature="e#758#853#0" expanded="false" />
-            <element signature="e#877#966#0" expanded="false" />
-            <element signature="e#998#1083#0" expanded="false" />
-            <element signature="e#1109#1206#0" expanded="false" />
-            <element signature="e#1232#1334#0" expanded="false" />
-            <element signature="e#1365#1467#0" expanded="false" />
-            <element signature="e#1498#1601#0" expanded="false" />
-            <element signature="e#1633#1733#0" expanded="false" />
-            <element signature="e#1762#1849#0" expanded="false" />
-            <element signature="e#1875#1968#0" expanded="false" />
-            <element signature="e#2000#2091#0" expanded="false" />
-            <element signature="e#2121#2254#0" expanded="false" />
-            <element signature="e#2279#2335#0" expanded="false" />
-            <element signature="e#2340#2401#0" expanded="false" />
-            <element signature="e#2407#2490#0" expanded="false" />
-            <element signature="e#2495#2597#0" expanded="false" />
-            <element signature="e#2603#2661#0" expanded="false" />
-            <element signature="e#2666#2733#0" expanded="false" />
-            <element signature="e#2739#2818#0" expanded="false" />
-            <element signature="e#2823#2917#0" expanded="false" />
-            <element signature="e#2923#2979#0" expanded="false" />
-            <element signature="e#2984#3047#0" expanded="false" />
-            <element signature="e#3053#3132#0" expanded="false" />
-            <element signature="e#3137#3231#0" expanded="false" />
-            <element signature="e#3237#3293#0" expanded="false" />
-            <element signature="e#3298#3361#0" expanded="false" />
-            <element signature="e#3367#3461#0" expanded="false" />
-            <element signature="e#3466#3584#0" expanded="false" />
-            <element signature="e#3590#3655#0" expanded="false" />
-            <element signature="e#3660#3735#0" expanded="false" />
-            <element signature="e#3741#3824#0" expanded="false" />
-            <element signature="e#3829#3931#0" expanded="false" />
-            <element signature="e#3937#3995#0" expanded="false" />
-            <element signature="e#4000#4067#0" expanded="false" />
-            <element signature="e#4073#4166#0" expanded="false" />
-            <element signature="e#4171#4289#0" expanded="false" />
-            <element signature="e#4295#4357#0" expanded="false" />
-            <element signature="e#4362#4439#0" expanded="false" />
-            <element signature="e#4445#4538#0" expanded="false" />
-            <element signature="e#4543#4661#0" expanded="false" />
-            <element signature="e#4667#4729#0" expanded="false" />
-            <element signature="e#4734#4811#0" expanded="false" />
-            <element signature="e#4817#4912#0" expanded="false" />
-            <element signature="e#4917#5039#0" expanded="false" />
-            <element signature="e#5045#5108#0" expanded="false" />
-            <element signature="e#5113#5192#0" expanded="false" />
-            <element signature="e#5198#5287#0" expanded="false" />
-            <element signature="e#5292#5402#0" expanded="false" />
-            <element signature="e#5408#5468#0" expanded="false" />
-            <element signature="e#5473#5546#0" expanded="false" />
-            <element signature="e#5552#5636#0" expanded="false" />
-            <element signature="e#5641#5739#0" expanded="false" />
-            <element signature="e#5745#5803#0" expanded="false" />
-            <element signature="e#5808#5875#0" expanded="false" />
-            <element signature="e#5881#5973#0" expanded="false" />
-            <element signature="e#5978#6096#0" expanded="false" />
-            <element signature="e#6102#6165#0" expanded="false" />
-            <element signature="e#6170#6245#0" expanded="false" />
-            <element signature="e#6251#6371#0" expanded="false" />
-            <element signature="e#6376#6520#0" expanded="false" />
-            <element signature="e#6526#6622#0" expanded="false" />
-            <element signature="e#6627#6692#0" expanded="false" />
-            <element signature="e#6698#6793#0" expanded="false" />
-            <element signature="e#6798#6924#0" expanded="false" />
-            <element signature="e#6930#6994#0" expanded="false" />
-            <element signature="e#6999#7078#0" expanded="false" />
-            <element signature="e#7084#7167#0" expanded="false" />
-            <element signature="e#7172#7274#0" expanded="false" />
-            <element signature="e#7280#7338#0" expanded="false" />
-            <element signature="e#7343#7410#0" expanded="false" />
-            <element signature="e#7416#7512#0" expanded="false" />
-            <element signature="e#7517#7643#0" expanded="false" />
-            <element signature="e#7649#7714#0" expanded="false" />
-            <element signature="e#7719#7798#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/videos.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="70" selection-start="371" selection-end="371" vertical-scroll-proportion="-8.5">
-          <folding>
-            <element signature="e#268#299#0" expanded="true" />
-            <element signature="e#403#426#0" expanded="true" />
-            <element signature="e#458#498#0" expanded="true" />
-            <element signature="e#585#640#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/menu.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="304" selection-end="304" vertical-scroll-proportion="-3.2692308">
-          <folding>
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="5" column="0" selection-start="304" selection-end="304" vertical-scroll-proportion="0.10278114" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/Video.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="0" selection-start="1388" selection-end="1388" vertical-scroll-proportion="0.020556228" />
+      </provider>
+    </entry>
+    <entry file="uml://PHP/\AppCache">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>PHP</ID>
+          <OriginalElement>\AppCache</OriginalElement>
+          <nodes>
+            <node x="" y="">\Symfony\Component\HttpKernel\TerminableInterface</node>
+            <node x="" y="">\Symfony\Component\HttpKernel\HttpKernelInterface</node>
+            <node x="" y="">\RequirementCollection</node>
+            <node x="" y="">\Symfony\Bundle\FrameworkBundle\HttpCache\HttpCache</node>
+            <node x="" y="">\AppKernel</node>
+            <node x="" y="">\AppCache</node>
+            <node x="" y="">\PhpIniRequirement</node>
+            <node x="" y="">\Requirement</node>
+            <node x="" y="">\SymfonyRequirements</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="360.0" y="204.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/mesVideos.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="8" selection-start="89" selection-end="89" vertical-scroll-proportion="-1.9615384">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/supprimVideo.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="17" selection-start="175" selection-end="175" vertical-scroll-proportion="0.22709924">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/modifVideo.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="18" selection-start="176" selection-end="176" vertical-scroll-proportion="0.22709924">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/ajoutVideo.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="8" selection-start="89" selection-end="89" vertical-scroll-proportion="0.097328246">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/modifProfil.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="21" selection-start="179" selection-end="179" vertical-scroll-proportion="0.22709924">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="74" selection-start="1980" selection-end="1989" vertical-scroll-proportion="0.0">
+        <state line="59" column="35" selection-start="2182" selection-end="2182" vertical-scroll-proportion="0.9396092">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/vueProfil.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="10" selection-start="168" selection-end="168" vertical-scroll-proportion="0.22709924">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/videos.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="53" selection-start="354" selection-end="354" vertical-scroll-proportion="0.41154563">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/membres.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="25" selection-start="227" selection-end="227" vertical-scroll-proportion="-6.5384617">
+          <folding>
+            <marker date="1376382364093" expanded="true" signature="-1:-1" placeholder="{% block dream_contenu ...%}" />
+            <marker date="1376382364093" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1376382364093" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1376382364093" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1376382364093" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1376382364093" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/membre.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="24" selection-start="401" selection-end="740" vertical-scroll-proportion="-3.2692308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/console">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="55" selection-start="405" selection-end="405" vertical-scroll-proportion="0.24727273">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="57" selection-start="4912" selection-end="4912" vertical-scroll-proportion="0.36685288">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Controller/WebsiteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="40" selection-start="2885" selection-end="2885" vertical-scroll-proportion="-12.423077">
+        <state line="30" column="31" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.33333334">
           <folding>
+            <element signature="e#58#103#0" expanded="true" />
             <element signature="e#306#444#0" expanded="false" />
-            <element signature="e#449#588#0" expanded="false" />
-            <element signature="e#593#1397#0" expanded="false" />
-            <element signature="e#826#1274#0" expanded="false" />
-            <element signature="e#1402#1903#0" expanded="false" />
-            <element signature="e#1533#1777#0" expanded="false" />
-            <element signature="e#1908#2272#0" expanded="false" />
-            <element signature="e#2277#2412#0" expanded="false" />
-            <element signature="e#2417#2558#0" expanded="false" />
-            <element signature="e#2563#2698#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/menuAdmin.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="61" selection-start="438" selection-end="438" vertical-scroll-proportion="-4.576923">
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/Video.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="0" selection-start="1388" selection-end="1388" vertical-scroll-proportion="-14.5">
-          <folding>
-            <element signature="e#89#210#0" expanded="false" />
-            <element signature="e#229#372#0" expanded="false" />
-            <element signature="e#395#495#0" expanded="false" />
-            <element signature="e#524#621#0" expanded="false" />
-            <element signature="e#647#748#0" expanded="false" />
-            <element signature="e#778#867#0" expanded="false" />
-            <element signature="e#899#996#0" expanded="false" />
-            <element signature="e#1029#1129#0" expanded="false" />
-            <element signature="e#1165#1251#0" expanded="false" />
-            <element signature="e#1280#1367#0" expanded="false" />
-            <element signature="e#1393#1484#0" expanded="false" />
-            <element signature="e#1514#1643#0" expanded="false" />
-            <element signature="e#1668#1724#0" expanded="false" />
-            <element signature="e#1729#1790#0" expanded="false" />
-            <element signature="e#1796#1886#0" expanded="false" />
-            <element signature="e#1891#2005#0" expanded="false" />
-            <element signature="e#2011#2072#0" expanded="false" />
-            <element signature="e#2077#2150#0" expanded="false" />
-            <element signature="e#2156#2240#0" expanded="false" />
-            <element signature="e#2245#2347#0" expanded="false" />
-            <element signature="e#2353#2411#0" expanded="false" />
-            <element signature="e#2416#2483#0" expanded="false" />
-            <element signature="e#2489#2585#0" expanded="false" />
-            <element signature="e#2590#2716#0" expanded="false" />
-            <element signature="e#2722#2786#0" expanded="false" />
-            <element signature="e#2791#2870#0" expanded="false" />
-            <element signature="e#2876#2977#0" expanded="false" />
-            <element signature="e#2982#3112#0" expanded="false" />
-            <element signature="e#3118#3186#0" expanded="false" />
-            <element signature="e#3191#3272#0" expanded="false" />
-            <element signature="e#3278#3385#0" expanded="false" />
-            <element signature="e#3390#3532#0" expanded="false" />
-            <element signature="e#3538#3609#0" expanded="false" />
-            <element signature="e#3614#3701#0" expanded="false" />
-            <element signature="e#3707#3796#0" expanded="false" />
-            <element signature="e#3801#3915#0" expanded="false" />
-            <element signature="e#3921#3981#0" expanded="false" />
-            <element signature="e#3986#4059#0" expanded="false" />
-            <element signature="e#4065#4150#0" expanded="false" />
-            <element signature="e#4155#4257#0" expanded="false" />
-            <element signature="e#4263#4322#0" expanded="false" />
-            <element signature="e#4327#4394#0" expanded="false" />
-            <element signature="e#4400#4493#0" expanded="false" />
-            <element signature="e#4498#4616#0" expanded="false" />
-            <element signature="e#4622#4685#0" expanded="false" />
-            <element signature="e#4690#4765#0" expanded="false" />
-            <element signature="e#4771#4888#0" expanded="false" />
-            <element signature="e#4893#5033#0" expanded="false" />
-            <element signature="e#5039#5131#0" expanded="false" />
-            <element signature="e#5136#5201#0" expanded="false" />
-            <element signature="e#5207#5299#0" expanded="false" />
-            <element signature="e#5304#5422#0" expanded="false" />
-            <element signature="e#5428#5490#0" expanded="false" />
-            <element signature="e#5495#5570#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/dream.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="4" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="25" selection-start="1789" selection-end="1789" vertical-scroll-proportion="0.33086875">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#1148#1649#0" expanded="false" />
+            <element signature="e#1279#1523#0" expanded="false" />
+            <element signature="e#1654#2018#0" expanded="false" />
+            <element signature="e#2023#2158#0" expanded="false" />
+            <element signature="e#2163#2304#0" expanded="false" />
+            <element signature="e#2309#2444#0" expanded="false" />
+            <element signature="e#2450#2590#0" expanded="false" />
+            <element signature="e#2595#2738#0" expanded="false" />
+            <element signature="e#2743#2890#0" expanded="false" />
+            <element signature="e#2896#3034#0" expanded="false" />
+            <element signature="e#3039#3184#0" expanded="false" />
+            <element signature="e#3189#3327#0" expanded="false" />
+            <element signature="e#3333#3462#0" expanded="false" />
+            <element signature="e#3467#4117#0" expanded="false" />
+            <element signature="e#3622#3880#0" expanded="false" />
+            <element signature="e#3898#4110#0" expanded="false" />
+            <element signature="e#3966#4109#0" expanded="false" />
           </folding>
         </state>
       </provider>

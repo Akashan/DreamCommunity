@@ -14,16 +14,21 @@ class WebsiteController extends Controller
     }
     public function membresAction()
     {
-        return $this->render('DreamCommunityWebsiteBundle:Website:membres.html.twig', array());
+        $repository = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('DreamCommunityWebsiteBundle:User');
+
+        $listeMembres = $repository->findAll();
+
+        return $this->render('DreamCommunityWebsiteBundle:Website:membres.html.twig', array('membres' => $listeMembres));
     }
     public function membreAction($id)
     {
-        $membre = new User();
-        $membre->setNom("Akashan");
-        $membre->setUrlYoutube("yt");
-        $membre->setUrlOther("other");
-        $membre->setImage("twitter.png");
-        $membre->setDescription("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tristique diam non blandit pellentesque. Curabitur et mi vel arcu ultrices accumsan. In mollis libero nec purus facilisis scelerisque. Fusce vel metus vitae ipsum mattis vehicula. Sed sagittis egestas nibh, vitae consectetur ipsum mattis porttitor. Etiam nec elit eu orci condimentum tempor. Suspendisse eleifend mi justo, at fermentum lectus lacinia vel.");
+        $repository = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('DreamCommunityWebsiteBundle:User');
+
+        $membre = $repository->find($id);
 
         return $this->render('DreamCommunityWebsiteBundle:Website:membre.html.twig', array( 'membre' => $membre));
     }
@@ -84,7 +89,7 @@ class WebsiteController extends Controller
     public function vueProfilAction(){
         return $this->render('DreamCommunityWebsiteBundle:Website:vueProfil.html.twig', array());
     }
-    public function modifProfilAction(){
+    public function modifierProfilAction(){
         return $this->render('DreamCommunityWebsiteBundle:Website:modifProfil.html.twig', array());
     }
     public function mesVideosAction(){
