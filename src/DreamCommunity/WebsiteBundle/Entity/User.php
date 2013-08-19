@@ -108,6 +108,13 @@ class User
     /**
      * @var boolean
      *
+     * @ORM\Column(name="isValidated", type="boolean")
+     */
+    private $isValidated;
+
+    /**
+     * @var boolean
+     *
      * @ORM\Column(name="isDeleted", type="boolean")
      */
     private $isDeleted;
@@ -448,5 +455,28 @@ class User
     public function getImage()
     {
         return $this->image;
+    }
+
+    /**
+     * Set isValidated
+     *
+     * @param boolean $isValidated
+     * @return User
+     */
+    public function setIsValidated($isValidated)
+    {
+        $this->isValidated = $isValidated;
+    
+        return $this;
+    }
+
+    /**
+     * Get isValidated
+     *
+     * @return boolean 
+     */
+    public function getIsValidated()
+    {
+        return $this->isValidated;
     }
 }

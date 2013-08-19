@@ -38,6 +38,13 @@ class Video
     /**
      * @var string
      *
+     * @ORM\Column(name="miniature", type="string", length=255)
+     */
+    private $miniature;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="description", type="text")
      */
     private $description;
@@ -298,5 +305,28 @@ class Video
     public function getUser()
     {
         return $this->user;
+    }
+
+    /**
+     * Set miniature
+     *
+     * @param string $miniature
+     * @return Video
+     */
+    public function setMiniature($miniature)
+    {
+        $this->miniature = $miniature;
+    
+        return $this;
+    }
+
+    /**
+     * Get miniature
+     *
+     * @return string 
+     */
+    public function getMiniature()
+    {
+        return $this->miniature;
     }
 }
