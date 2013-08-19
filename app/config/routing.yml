@@ -2,3 +2,12 @@ dream_community_website:
     resource: "@DreamCommunityWebsiteBundle/Resources/config/routing.yml"
     prefix:   /
 
+login:
+    pattern:   /login
+    defaults:  { _controller: DreamCommunityUserBundle:Security:login }
+
+login_check:
+    pattern:   /login_check
+
+logout:
+    pattern:   /logout

@@ -32,7 +32,10 @@
                         <li> <a href="{{ path('dream_community_website_liens') }}">Liens</a> </li>
                     </ul>
                     <form class="navbar-search pull-right" action="">
-                        <input type="text" class="search-query span2" placeholder="Search">
+                        <ul class="nav">
+                            {% if is_granted('ROLE_ADMIN') %} <li>  <a href="{{ path('dream_community_website_vue_profil') }}">{{ app.user.username }}</a> </li>{% endif %}
+                            <li>{% if is_granted('ROLE_ADMIN') %}<a href="{{ path('logout') }}">Logout</a> {% else %} <a href="{{ path('login') }}">Login</a> {% endif %} </li>
+                        </ul>
                     </form>
                 </div>
             </div>
@@ -46,11 +49,13 @@
                         {{ render(controller("DreamCommunityWebsiteBundle:Website:menu", {'nb': 5})) }}
                     </div>
                 </div>
-                <div class="row">
-                    <div id="menu" class="menu-area" style="margin-top:15px;">
-                        {{ render(controller("DreamCommunityWebsiteBundle:Website:menuAdmin")) }}
+                {% if is_granted('ROLE_ADMIN') %}
+                    <div class="row">
+                        <div id="menu" class="menu-area" style="margin-top:15px;">
+                            {{ render(controller("DreamCommunityWebsiteBundle:Website:menuAdmin")) }}
+                        </div>
                     </div>
-                </div>
+                {% endif %}
             </div>
             <div id="content" class="span10 content-area">
                 <div class="row-fluid">
