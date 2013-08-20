@@ -27,9 +27,11 @@ security:
             form_login:
                 login_path: login
                 check_path: login_check
+                success_handler: user_bundle.handler.login_success_handler
             logout:
                 path:   logout
                 target: /
+                success_handler: user_bundle.handler.logout_success_handler
 
         login:
             pattern:  ^/demo/secured/login$

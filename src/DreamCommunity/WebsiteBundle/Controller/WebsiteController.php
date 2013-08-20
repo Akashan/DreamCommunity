@@ -5,6 +5,7 @@ use DreamCommunity\WebsiteBundle\Entity\User;
 use DreamCommunity\WebsiteBundle\Entity\Video;
 use DreamCommunity\WebsiteBundle\Form\UserType;
 use DreamCommunity\WebsiteBundle\Form\UserEditType;
+use DreamCommunity\WebsiteBundle\Form\VideoType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Validator\Constraints\DateTime;
@@ -22,12 +23,14 @@ class WebsiteController extends Controller
         $user->setUsername("Akashan");
         $user->setPassword($encodedPass);
         $user->setDescription("moi");
+        $user->setImage("xxx");
         $user->setEmail("akashan31@gmail.com");
         $user->setIsDeleted(false);
         $user->setIsValidated(true);
         $user->setNbVue(0);
         $user->setNom("Akashan");
 
+        $user->setLastLogin(new \Datetime());
 
         // Le sel et les rôles sont vides pour l'instant
         $user->setSalt('');
@@ -62,36 +65,25 @@ class WebsiteController extends Controller
 
         $membre = $repository->find($id);
 
-        return $this->render('DreamCommunityWebsiteBundle:Website:membre.html.twig', array( 'membre' => $membre));
+        return $this->render('DreamCommunityWebsiteBundle:Website:membre.html.twig', array('membre' => $membre));
     }
     public function videosAction()
     {
-        $user = new User();
-        $user->setNom("moi");
+        $repository = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('DreamCommunityWebsiteBundle:Video');
 
-        $liste = array();
-
-        for($i = 0; $i <= 10; $i++)
-        {
-            $video = new Video();
-            $video->setTitre("Titre de ma vidéo");
-            $video->setMiniature("sldkjf");
-            $video->setUser($user);
-
-            $liste[] = $video;
-        }
+        $liste = $repository->findBy(array(), array('datePublication' => 'desc', 'id' => 'desc'));
 
         return $this->render('DreamCommunityWebsiteBundle:Website:videos.html.twig', array('liste_videos' => $liste));
     }
     public function videoAction($id)
     {
-        $user = new User();
-        $user->setNom("moi");
+        $repository = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('DreamCommunityWebsiteBundle:Video');
 
-        $video = new Video();
-        $video->setTitre("Titre de ma vidéo");
-        $video->setMiniature("sldkjf");
-        $video->setUser($user);
+        $video = $repository->find($id);
 
         return $this->render('DreamCommunityWebsiteBundle:Website:video.html.twig', array('video' => $video));
     }
@@ -109,7 +101,53 @@ class WebsiteController extends Controller
     }
 
     public function ajoutVideoAction(){
-        return $this->render('DreamCommunityWebsiteBundle:Website:ajoutVideo.html.twig', array());
+        $video = new Video;
+
+        // On crée le formulaire grâce à l'ArticleType
+        $form = $this->createForm(new VideoType(), $video);
+
+        // On récupère la requête
+        $request = $this->getRequest();
+
+        if( $request->get('cancel') == 'Cancel' )
+            return $this->redirect($this->generateUrl('dream_community_website_accueil'));
+
+        // On vérifie qu'elle est de type POST
+        if ($request->getMethod() == 'POST') {
+            // On fait le lien Requête <-> Formulaire
+            $form->bind($request);
+
+            // On vérifie que les valeurs entrées sont correctes
+            // (Nous verrons la validation des objets en détail dans le prochain chapitre)
+            if ($form->isValid()) {
+
+                $video->setDateCreation(new \DateTime());
+                $video->setMiniature("");
+                $video->setNbVue(0);
+                $video->setIsDeleted(false);
+
+                $video->setUser($this->getUser());
+                // On enregistre notre objet $article dans la base de données
+                $em = $this->getDoctrine()->getManager();
+
+                $em->persist($video);
+                $em->flush();
+
+                // On définit un message flash
+                $this->get('session')->getFlashBag()->add('info', 'Membre bien ajouté');
+
+                // On redirige vers la page de visualisation de l'article nouvellement créé
+                return $this->redirect($this->generateUrl('dream_community_website_video', array('id' => $video->getId())));
+            }
+        }
+
+        // À ce stade :
+        // - Soit la requête est de type GET, donc le visiteur vient d'arriver sur la page et veut voir le formulaire
+        // - Soit la requête est de type POST, mais le formulaire n'est pas valide, donc on l'affiche de nouveau
+
+        return $this->render('DreamCommunityWebsiteBundle:Website:ajoutVideo.html.twig', array(
+            'form' => $form->createView(),
+        ));
     }
     public function modifVideoAction($id){
         return $this->render('DreamCommunityWebsiteBundle:Website:modifVideo.html.twig', array());
@@ -119,10 +157,46 @@ class WebsiteController extends Controller
     }
 
     public function vueProfilAction(){
-        return $this->render('DreamCommunityWebsiteBundle:Website:vueProfil.html.twig', array());
+        $user = $this->getUser();
+
+        if (null === $user) {
+            // Ici, l'utilisateur est anonyme ou l'URL n'est pas derrière un pare-feu
+            return $this->render('DreamCommunityWebsiteBundle:Website:index.html.twig', array());
+        } else {
+            return $this->render('DreamCommunityWebsiteBundle:Website:vueProfil.html.twig', array('membre' => $user));
+        }
     }
     public function modifierProfilAction(){
-        return $this->render('DreamCommunityWebsiteBundle:Website:modifProfil.html.twig', array());
+        $user = $this->getUser();
+
+        // On utiliser le ArticleEditType
+        $form = $this->createForm(new UserEditType(), $user);
+
+        $request = $this->getRequest();
+
+        if( $request->get('cancel') == 'Cancel' )
+            return $this->redirect($this->generateUrl('dream_community_website_vue_profil'));
+
+        if ($request->getMethod() == 'POST') {
+            $form->bind($request);
+
+            if ($form->isValid()) {
+                // On enregistre l'article
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($user);
+                $em->flush();
+
+                // On définit un message flash
+                $this->get('session')->getFlashBag()->add('info', 'Profil modifié');
+
+                return $this->redirect($this->generateUrl('dream_community_website_vue_profil'));
+            }
+        }
+
+        return $this->render('DreamCommunityWebsiteBundle:Website:modifProfil.html.twig', array(
+            'form'    => $form->createView(),
+            'user' => $user
+        ));
     }
     public function mesVideosAction(){
         return $this->render('DreamCommunityWebsiteBundle:Website:mesVideos.html.twig', array());
@@ -179,7 +253,6 @@ class WebsiteController extends Controller
             'form' => $form->createView(),
         ));
     }
-
     public function modifMembreAction($id){
         $repository = $this->getDoctrine()
             ->getManager()
@@ -216,6 +289,7 @@ class WebsiteController extends Controller
             'user' => $user
         ));
     }
+
     public function menuAdminAction(){
         return $this->render('DreamCommunityWebsiteBundle:Website:menuAdmin.html.twig');
     }

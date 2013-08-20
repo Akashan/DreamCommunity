@@ -37,7 +37,7 @@
         <div class="row-fluid">
             <div class="span12">
                 {% if is_granted('ROLE_SUPER_ADMIN') %}
-                    <a href="{{ path('dream_community_website_modif_membre', {'id': membre.id}) }}">Modifier un membre</a>
+                    <a href="{{ path('dream_community_website_modif_membre', {'id': membre.id}) }}">Modifier un membre</a> -
                 {% endif %}
                 <a href="{{ path('dream_community_website_membres') }}">Retour</a>
             </div>

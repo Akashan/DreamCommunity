@@ -41,7 +41,7 @@ class User implements AdvancedUserInterface, \Serializable
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="lastLogin", type="datetime")
+     * @ORM\Column(name="lastLogin", type="datetime", nullable=true)
      */
     private $lastLogin;
 
@@ -76,28 +76,28 @@ class User implements AdvancedUserInterface, \Serializable
     /**
      * @var string
      *
-     * @ORM\Column(name="urlYoutube", type="string", length=255)
+     * @ORM\Column(name="urlYoutube", type="string", length=255, nullable=true)
      */
     private $urlYoutube;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="urlTwitter", type="string", length=255)
+     * @ORM\Column(name="urlTwitter", type="string", length=255, nullable=true)
      */
     private $urlTwitter;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="urlFacebook", type="string", length=255)
+     * @ORM\Column(name="urlFacebook", type="string", length=255, nullable=true)
      */
     private $urlFacebook;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="urlOther", type="string", length=255)
+     * @ORM\Column(name="urlOther", type="string", length=255, nullable=true)
      */
     private $urlOther;
 
@@ -131,6 +131,11 @@ class User implements AdvancedUserInterface, \Serializable
      * @ORM\Column(name="roles", type="array")
      */
     private $roles;
+
+    public function __construct()
+    {
+        $this->roles = array();
+    }
 
     /**
      * Get id
