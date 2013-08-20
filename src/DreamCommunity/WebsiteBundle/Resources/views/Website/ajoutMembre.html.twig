@@ -1,0 +1,13 @@
+{% extends "::layout.html.twig" %}
+
+{% block title %}
+    Membres - {{ parent() }}
+{% endblock %}
+
+{% block dream_page_title %}
+Ajouter un membre
+{% endblock %}
+
+{% block dream_contenu %}
+    {% include "DreamCommunityWebsiteBundle:Website:formMembre.html.twig" %}
+{% endblock %}

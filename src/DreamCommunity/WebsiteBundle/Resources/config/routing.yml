@@ -60,3 +60,13 @@ dream_community_website_modif_profil:
 dream_community_website_mes_videos:
     pattern:  /monprofil/videos
     defaults: { _controller: DreamCommunityWebsiteBundle:Website:mesVideos }
+
+
+dream_community_website_ajout_membre:
+    pattern:  /membres/ajout
+    defaults: { _controller: DreamCommunityWebsiteBundle:Website:ajoutMembre }
+dream_community_website_modif_membre:
+    pattern:  /membres/modif/{id}
+    defaults: { _controller: DreamCommunityWebsiteBundle:Website:modifMembre }
+    requirements:
+        id:  \d+
