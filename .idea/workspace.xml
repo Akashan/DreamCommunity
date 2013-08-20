@@ -2,24 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc054e20-59a2-496a-9f78-b9d733bfe4d3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DreamCommunity/UserBundle/DreamCommunityUserBundle.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/Keyword.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Form/KeywordType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DreamCommunity/UserBundle/Handler/LoginSuccessHandler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DreamCommunity/UserBundle/Handler/LogoutSuccessHandler.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Form/VideoType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/formVideo.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Controller/WebsiteController.php" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Controller/WebsiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/ajoutVideo.html.twig" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/ajoutVideo.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/membre.html.twig" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/membre.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/modifProfil.html.twig" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/modifProfil.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/config/services.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/video.html.twig" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/video.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/videos.html.twig" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/videos.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/vueProfil.html.twig" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/vueProfil.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DreamCommunity.iws" />
@@ -35,7 +17,7 @@
     <file path="/layout.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375450354756" ignored="false" />
     <file path="/menu.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375285369966" ignored="false" />
     <file path="/membres.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376382344094" ignored="false" />
-    <file path="/Dummy.txt" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377011128611" ignored="false" />
+    <file path="/Dummy.txt" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377011175157" ignored="false" />
     <file path="/membre.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376382217196" ignored="false" />
     <file path="/videos.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377010845598" ignored="false" />
     <file path="/video.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377011039079" ignored="false" />
@@ -722,7 +704,11 @@
       <created>1375457872441</created>
       <updated>1375457872441</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Videos + login">
+      <created>1377011186165</created>
+      <updated>1377011186165</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
