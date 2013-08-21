@@ -1,31 +1,78 @@
 <div class="well">
-    <form method="post" {{ form_enctype(form) }}>
+    <form method="post" name={{ formName }} {{ form_enctype(form) }}>
         {{ form_widget(form) }}
-
+        <input type="hidden" name="ytCaller" id="ytCaller" value="" />
         <script type="text/javascript">
 
             function youtubeDataCallback(data) {
 
-                /*var keywords = data.entry.media$group.media$keywords.$t;
-                //alert(keywords);
-                $('#dreamcommunity_websitebundle_videotype_tags').val(keywords);*/
+                var $formName =  $('div.well Form').attr('name');
 
-                var miniature = data.entry.media$group.media$thumbnail[1].url;
-                //alert(miniature);
-                $('#dreamcommunity_websitebundle_videotype_miniature').val(miniature);
+                $('div#divMin').remove();
 
-                var titre = data.entry.title.$t;
-                //alert(titre);
-                $('#dreamcommunity_websitebundle_videotype_titre').val(titre);
+                var $miniatureContainer = $('input#dreamcommunity_websitebundle_videotype_miniature').parent();
+                var $divMiniature = $('<div id="divMin" class="row-fluid">');
+                $miniatureContainer.append($divMiniature);
+                for (var i=0;i<data.entry.media$group.media$thumbnail.length;i++)
+                {
+                    $('img#ytMin'+i).parent().remove();
+                    var $imgMiniature = $('<div style="float:left; margin-bottom:10px; margin-right:10px; border:0px solid red;">' +
+                                            '<img id="ytMin'+i+'" style="width:120px; " src="'+data.entry.media$group.media$thumbnail[i].url+'" />' +
+                                            '<br>' +
+                                            '<span>'+data.entry.media$group.media$thumbnail[i].width+'x'+data.entry.media$group.media$thumbnail[i].height+'</span>' +
+                                        '</div>');
 
-                var description = data.entry.media$group.media$description.$t;
-                //alert(description);
-                $('#dreamcommunity_websitebundle_videotype_description').val(description);
+                    $miniatureContainer.append($imgMiniature);
 
+                    if($formName == "MODIFVID" && $('#dreamcommunity_websitebundle_videotype_miniature').val() == data.entry.media$group.media$thumbnail[i].url)
+                    {
+                        $('img#ytMin'+i).parent().css("border", "1px solid red");
+                        $('img#ytMin'+i).parent().css("margin-bottom", "8px");
+                        $('img#ytMin'+i).parent().css("margin-right", "8px");
+                    }
 
+                    $('img#ytMin'+i).click(function ()
+                    {
+                        for (var i=0;i<data.entry.media$group.media$thumbnail.length;i++)
+                        {
+                            $('img#ytMin'+i).parent().css("border", "0px solid red");
+                            $('img#ytMin'+i).parent().css("margin-bottom", "10px");
+                            $('img#ytMin'+i).parent().css("margin-right", "10px");
+                        }
+
+                        $(this).parent().css("border", "1px solid red");
+                        $(this).parent().css("margin-bottom", "8px");
+                        $(this).parent().css("margin-right", "8px");
+                        $('#dreamcommunity_websitebundle_videotype_miniature').val($(this).attr('src'));
+                        return false;
+                    });
+                }
+
+                if($('input#ytCaller').val() == "btImport")
+                {
+                    var titre = data.entry.title.$t;
+                    //alert(titre);
+                    $('#dreamcommunity_websitebundle_videotype_titre').val(titre);
+
+                    var description = data.entry.media$group.media$description.$t;
+                    //alert(description);
+                    $('#dreamcommunity_websitebundle_videotype_description').val(description);
+                }
             }
 
+            var nowTemp = new Date();
+            var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+
+            var checkin = $('.datepicker').datepicker({
+                format: 'dd/mm/yyyy',
+                onRender: function(date) {
+                    return date.valueOf() < now.valueOf() ? 'disabled' : '';
+                }
+            }).data('datepicker');
+
             $(document).ready(function() {
+
+                $('textarea#dreamcommunity_websitebundle_videotype_description').parent().css("clear", "both");
 
                 var $urlContainer = $('input#dreamcommunity_websitebundle_videotype_urlVideo').parent();
                 var $lienImport = $('<a href="#" id="importData" style="margin-top: -10px; margin-left: 2px;" class="btn btn-info btn-mini"><i class="icon-white icon-refresh"></i> Importez les données</a>');
@@ -42,10 +89,17 @@
                         alert('Unable to parse Video ID/URL.');
                         return;
                     }
+                    $('input#ytCaller').val("btImport");
                     $.getScript('http://gdata.youtube.com/feeds/api/videos/' + encodeURIComponent(videoid) + '?v=2&alt=json-in-script&callback=youtubeDataCallback');
 
                     return false;
                 });
+
+                var videoid = $('#dreamcommunity_websitebundle_videotype_urlVideo').val();
+                if(videoid){
+                    $('input#ytCaller').val("modif");
+                    $.getScript('http://gdata.youtube.com/feeds/api/videos/' + encodeURIComponent(videoid) + '?v=2&alt=json-in-script&callback=youtubeDataCallback');
+                }
 
             });
         </script>
