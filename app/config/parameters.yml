@@ -13,3 +13,4 @@ parameters:
     locale: en
     secret: ThisTokenIsNotSoSecretChangeIt
     videos.nbElementParPage: 10
+    articles.nbElementParPage: 10
