@@ -20,7 +20,7 @@ Mon Profil
                     {% endif %}
                 </div>
                 <div class="span10">
-                    {{ membre.description }}
+                    {{ membre.description|raw|nl2br }}
                 </div>
             </div>
         </div>
@@ -34,12 +34,12 @@ Mon Profil
             {% if membre.urlOther is not null %}<a href="{{ membre.urlOther }}"><img src="{{ asset('img/www.png') }}" /></a>&nbsp;{% endif %}
         </div>
     </div>
-    <div class="row-fluid">
+    <div style="margin-bottom: 5px;" class="row-fluid">
         <div class="span12">
             {% if is_granted('ROLE_SUPER_ADMIN') %}
-                <a href="{{ path('dream_community_website_modif_profil') }}">Modifier mon profil</a> -
+                <a class="btn btn-success" href="{{ path('dream_community_website_modif_profil') }}">Modifier mon profil</a>
             {% endif %}
-            <a href="{{ path('dream_community_website_vue_profil') }}">Retour</a>
+            <a class="btn btn-primary" href="{{ path('dream_community_website_vue_profil') }}">Retour</a>
         </div>
     </div>
 {% endblock %}

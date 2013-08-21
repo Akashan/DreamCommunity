@@ -18,8 +18,10 @@ dream_community_website_membre_videos:
     requirements:
         id:  \d+
 dream_community_website_videos:
-    pattern:  /videos
-    defaults: { _controller: DreamCommunityWebsiteBundle:Website:videos }
+    pattern:  /videos/{page}
+    defaults: { _controller: DreamCommunityWebsiteBundle:Website:videos, page: 1 }
+    requirements:
+        page:  \d+
 dream_community_website_video:
     pattern:  /video/{id}
     defaults: { _controller: DreamCommunityWebsiteBundle:Website:video }

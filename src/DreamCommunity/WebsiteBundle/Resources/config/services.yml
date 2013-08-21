@@ -3,6 +3,8 @@ parameters:
     user_bundle.handler.logout_success_handler.class: DreamCommunity\UserBundle\Handler\LogoutSuccessHandler
     
 services:
+    dc_autolinker:
+        class: DreamCommunity\WebsiteBundle\TextHelper\DcAutoLinkText
     user_bundle.handler.login_success_handler:
         class:  %user_bundle.handler.login_success_handler.class%
         arguments:  [@router, @security.context]

@@ -8,7 +8,7 @@ use DreamCommunity\WebsiteBundle\Form\UserEditType;
 use DreamCommunity\WebsiteBundle\Form\VideoType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Validator\Constraints\DateTime;
+use JMS\SecurityExtraBundle\Annotation\Secure;
 
 class WebsiteController extends Controller
 {
@@ -65,27 +65,63 @@ class WebsiteController extends Controller
 
         $membre = $repository->find($id);
 
+        $str = $membre->getDescription();
+        // On récupère le service
+        $autoLinker = $this->container->get('dc_autolinker');
+        $membre->setDescription($autoLinker->auto_link_text($str));
+
         return $this->render('DreamCommunityWebsiteBundle:Website:membre.html.twig', array('membre' => $membre));
     }
-    public function videosAction()
+    public function videosAction($page)
     {
-        $repository = $this->getDoctrine()
+        if($page < 1)
+            $page = 1;
+
+        $nbEltParPage = 10;
+
+        if($this->container->getParameter('videos.nbElementParPage'))
+            $nbEltParPage = $this->container->getParameter('videos.nbElementParPage');
+
+        $liste = $this->getDoctrine()
             ->getManager()
-            ->getRepository('DreamCommunityWebsiteBundle:Video');
+            ->getRepository('DreamCommunityWebsiteBundle:Video')
+            ->getVideos($nbEltParPage, $page); // 3 articles par page : c'est totalement arbitraire !
 
-        $liste = $repository->findBy(array(), array('datePublication' => 'desc', 'id' => 'desc'));
+        /*foreach($liste as $video){
 
-        return $this->render('DreamCommunityWebsiteBundle:Website:videos.html.twig', array('liste_videos' => $liste));
+            $urlVideo = $video->getUrlVideo();
+
+            $video->setMiniature("http://i.ytimg.com/vi/".$urlVideo."/mqdefault.jpg");
+
+        }*/
+
+        // On ajoute ici les variables page et nb_page à la vue
+        return $this->render('DreamCommunityWebsiteBundle:Website:videos.html.twig', array(
+            'liste_videos'   => $liste,
+            'page'       => $page,
+            'nombrePage' => ceil(count($liste)/$nbEltParPage)
+        ));
     }
     public function videoAction($id)
     {
+        $user = $this->getUser();
+
         $repository = $this->getDoctrine()
             ->getManager()
             ->getRepository('DreamCommunityWebsiteBundle:Video');
 
         $video = $repository->find($id);
 
-        return $this->render('DreamCommunityWebsiteBundle:Website:video.html.twig', array('video' => $video));
+        $str = $video->getDescription();
+        // On récupère le service
+        $autoLinker = $this->container->get('dc_autolinker');
+        $video->setDescription($autoLinker->auto_link_text($str));
+
+        $urlVideo = $video->getUrlVideo();
+
+        $video->setMiniature("http://i.ytimg.com/vi/".$urlVideo."/mqdefault.jpg");
+
+        return $this->render('DreamCommunityWebsiteBundle:Website:video.html.twig', array('video' => $video, 'user' => $user));
     }
     public function forumAction()
     {
@@ -100,7 +136,11 @@ class WebsiteController extends Controller
         return $this->render('DreamCommunityWebsiteBundle:Website:liens.html.twig', array());
     }
 
+    /**
+     * @Secure(roles="ROLE_SUPER_ADMIN, ROLE_ADMIN")
+     */
     public function ajoutVideoAction(){
+
         $video = new Video;
 
         // On crée le formulaire grâce à l'ArticleType
@@ -149,13 +189,59 @@ class WebsiteController extends Controller
             'form' => $form->createView(),
         ));
     }
+    /**
+     * @Secure(roles="ROLE_SUPER_ADMIN, ROLE_ADMIN")
+     */
     public function modifVideoAction($id){
-        return $this->render('DreamCommunityWebsiteBundle:Website:modifVideo.html.twig', array());
+
+        $repository = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('DreamCommunityWebsiteBundle:Video');
+
+        $video = $repository->find($id);
+
+        // On utiliser le ArticleEditType
+        $form = $this->createForm(new VideoType(), $video);
+
+        $request = $this->getRequest();
+
+        if( $request->get('cancel') == 'Cancel' )
+            return $this->redirect($this->generateUrl('dream_community_website_video', array('id' => $video->getId())));
+
+        if ($request->getMethod() == 'POST') {
+            $form->bind($request);
+
+            if ($form->isValid()) {
+
+                // On enregistre l'article
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($video);
+                $em->flush();
+
+                // On définit un message flash
+                $this->get('session')->getFlashBag()->add('info', 'Vidéo modifiée');
+
+                return $this->redirect($this->generateUrl('dream_community_website_video', array('id' => $video->getId())));
+            }
+        }
+
+        $video->setTags('sdfsdf');
+
+        return $this->render('DreamCommunityWebsiteBundle:Website:modifVideo.html.twig', array(
+            'form'    => $form->createView(),
+            'video' => $video
+        ));
     }
+    /**
+     * @Secure(roles="ROLE_SUPER_ADMIN, ROLE_ADMIN")
+     */
     public function supprimVideoAction($id){
         return $this->render('DreamCommunityWebsiteBundle:Website:supprimVideo.html.twig', array());
     }
 
+    /**
+     * @Secure(roles="ROLE_SUPER_ADMIN, ROLE_ADMIN")
+     */
     public function vueProfilAction(){
         $user = $this->getUser();
 
@@ -163,9 +249,19 @@ class WebsiteController extends Controller
             // Ici, l'utilisateur est anonyme ou l'URL n'est pas derrière un pare-feu
             return $this->render('DreamCommunityWebsiteBundle:Website:index.html.twig', array());
         } else {
+
+            $str = $user->getDescription();
+            // On récupère le service
+            $autoLinker = $this->container->get('dc_autolinker');
+            $user->setDescription($autoLinker->auto_link_text($str));
+
+
             return $this->render('DreamCommunityWebsiteBundle:Website:vueProfil.html.twig', array('membre' => $user));
         }
     }
+    /**
+     * @Secure(roles="ROLE_SUPER_ADMIN, ROLE_ADMIN")
+     */
     public function modifierProfilAction(){
         $user = $this->getUser();
 
@@ -198,10 +294,16 @@ class WebsiteController extends Controller
             'user' => $user
         ));
     }
+    /**
+     * @Secure(roles="ROLE_SUPER_ADMIN, ROLE_ADMIN")
+     */
     public function mesVideosAction(){
         return $this->render('DreamCommunityWebsiteBundle:Website:mesVideos.html.twig', array());
     }
 
+    /**
+     * @Secure(roles="ROLE_SUPER_ADMIN")
+     */
     public function ajoutMembreAction(){
         $user = new User;
 
@@ -253,6 +355,9 @@ class WebsiteController extends Controller
             'form' => $form->createView(),
         ));
     }
+    /**
+     * @Secure(roles="ROLE_SUPER_ADMIN")
+     */
     public function modifMembreAction($id){
         $repository = $this->getDoctrine()
             ->getManager()
@@ -295,15 +400,15 @@ class WebsiteController extends Controller
     }
     public function menuAction($nb)
     {
-        // On fixe en dur une liste ici, bien entendu par la suite on la récupérera depuis la BDD !
-        $liste = array(
-            array('id' => 2, 'titre' => 'Mon dernier weekend !', 'auteur' => 'moi'),
-            array('id' => 5, 'titre' => 'Sortie de Symfony2.1', 'auteur' => 'moi'),
-            array('id' => 9, 'titre' => 'Petit test', 'auteur' => 'moi')
-        );
+        $repository = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('DreamCommunityWebsiteBundle:Video');
+
+        $liste = $repository->findBy(array('isDeleted' => false), array('datePublication' => 'desc', 'id' => 'desc'), 5, 0);
 
         return $this->render('DreamCommunityWebsiteBundle:Website:menu.html.twig', array(
             'liste_videos' => $liste // C'est ici tout l'intérêt : le contrôleur passe les variables nécessaires au template !
         ));
     }
+
 }

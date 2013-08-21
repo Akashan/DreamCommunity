@@ -2,6 +2,7 @@
 
 namespace DreamCommunity\UserBundle\Handler;
 
+use DateTimeZone;
 use Symfony\Component\DependencyInjection\ContainerAware;
 use Symfony\Component\Security\Http\Authentication\AuthenticationSuccessHandlerInterface;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
@@ -26,7 +27,7 @@ class LoginSuccessHandler extends ContainerAware implements AuthenticationSucces
     {
         $user = $token->getUser();
 
-        $user->setLastLogin(new \DateTime());
+        $user->setLastLogin(new \DateTime('now', new DateTimeZone('Europe/Paris')));
 
         // On enregistre l'article
         $em = $this->container->get('doctrine')->getManager();

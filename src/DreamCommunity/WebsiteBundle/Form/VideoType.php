@@ -2,6 +2,7 @@
 
 namespace DreamCommunity\WebsiteBundle\Form;
 
+use DateTimeZone;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
@@ -12,21 +13,23 @@ class VideoType extends AbstractType
     {
         $builder
             ->add('urlVideo','text', array(
-                'label' => "Code vidéo (ex : EUSglyLH_yc)"
+                'label' => "Code vidéo (ex : EUSglyLH_yc)",
             ))
             ->add('titre','text')
-            ->add('description','textarea')
+            ->add('miniature','text')
+            ->add('description','textarea', array(
+                'attr' => array('cols' => '75', 'rows' => '15'),
+            ))
             ->add('datePublication','date',array(
                 'input'  => 'datetime',
                 'empty_value' => array('year' => 'Année', 'month' => 'Mois', 'day' => 'Jour'),
                 'format' => 'dd MM yyyy',
                 'years' => range(date('Y'), date('Y')+2),
-                'widget' => 'choice'
+                'widget' => 'choice',
+                'data' => new \DateTime('now', new DateTimeZone('Europe/Paris'))
             ))
-            ->add('keywords', 'collection', array(
-                'type' => new KeywordType(),
-                'allow_add' => true,
-                'allow_delete' => true,
+            ->add('tags', 'text', array(
+                'label' => "Tags (séparés par des virgules)",
             ))
         ;
 

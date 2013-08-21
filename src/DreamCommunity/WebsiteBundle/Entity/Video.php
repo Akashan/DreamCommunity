@@ -91,6 +91,28 @@ class Video
     private $user;
 
     /**
+     * @var string
+     */
+    private $tags;
+
+    public function setTags($tags)
+    {
+        $this->keywords = explode(',', $tags);
+
+        return $this;
+    }
+
+    /**
+     * Get tags
+     *
+     * @return string
+     */
+    public function getTags()
+    {
+        return implode(',', $this->keywords);
+    }
+
+    /**
      * Get id
      *
      * @return integer 

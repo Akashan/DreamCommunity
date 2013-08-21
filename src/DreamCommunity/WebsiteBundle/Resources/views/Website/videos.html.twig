@@ -9,12 +9,25 @@ Les Vidéos des Membres
 {% endblock %}
 
 {% block dream_contenu %}
+    <div class="row-fluid">
     {% for video in liste_videos %}
         <div style="float:left;margin:10px;">
             <a href="{{ path('dream_community_website_video', {'id': video.id }) }}">
-                <span style="font-size:12px;">{{ video.titre }}</span> <span style="font-size:10px;margin-top:-10px;">Par {{ video.user.nom }} le {{ video.datePublication|date('d/m/Y') }}.</span><br>
-                <img src="{{ video.miniature }}" style="height:180px;width:320px;border:1px solid #000;">
+                <span style="font-size:12px;">{{ video.titre|length > 50 ? video.titre|slice(0, 50) ~ '...' : video.titre }}</span><br>
+                <img src="{{ video.miniature }}" style="height:180px;width:320px;border:1px solid #000;"><br>
+                <span style="font-size:10px;margin-top:-10px;">Par {{ video.user.nom }} le {{ video.datePublication|date('d/m/Y') }}.</span>
             </a>
         </div>
     {% endfor %}
+    </div>
+    <div class="pagination pagination-centered">
+        <ul>
+            {# On utilise la fonction range(a, b) qui crée un tableau de valeurs entre a et b #}
+            {% for p in range(1, nombrePage) %}
+                <li{% if p == page %} class="active"{% endif %}>
+                    <a href="{{ path('dream_community_website_videos', {'page': p}) }}">{{ p }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
 {% endblock %}

@@ -9,8 +9,20 @@
 {% endblock %}
 
 {% block dream_contenu %}
-    <iframe width="560" height="315" src="//www.youtube.com/embed/{{ video.urlVideo }}" frameborder="0" allowfullscreen></iframe><br>
-    {{ video.description }}<br>
-    <br>
-    Publiée le {{ video.datePublication|date('d/m/Y') }}
+    <div class="row-fluid">
+        <div class="span12">
+            <iframe width="560" height="315" src="//www.youtube.com/embed/{{ video.urlVideo }}" frameborder="0" allowfullscreen></iframe><br>
+            <p>{{ video.description|raw|nl2br }}</p>
+            <br>
+            Publiée le {{ video.datePublication|date('d/m/Y') }}<br>
+        </div>
+    </div>
+    <div style="margin-bottom: 5px;" class="row-fluid">
+        <div class="span12">
+            {% if is_granted('ROLE_ADMIN') and video.user.id == user.id %}
+                <a class="btn btn-success" href="{{ path('dream_community_website_modif_video', {'id': video.id}) }}">Modifier la video</a>
+                <a class="btn btn-danger" href="{{ path('dream_community_website_supprim_video', {'id': video.id}) }}">Supprimer la video</a>
+            {% endif %}
+        </div>
+    </div>
 {% endblock %}

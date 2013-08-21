@@ -1,5 +1,5 @@
 <h5>Dernières Vidéos</h5>
 {% for video in liste_videos %}
-    <p style="font-size:12px;"><a href="{{ path('dream_community_website_video', {'id': video.id}) }}">{{ video.titre }}</a><br>
-    <span class="pull-left" style="font-size:10px;margin-top:-10px;">Par {{ video.auteur }}.</span></p>
+    <p style="font-size:12px;"><a href="{{ path('dream_community_website_video', {'id': video.id}) }}">{{ video.titre|length > 20 ? video.titre|slice(0, 20) ~ '...' : video.titre }}</a><br>
+    <span class="pull-left" style="font-size:10px;margin-top:-10px;">Par {{ video.user.nom }}.</span></p>
 {% endfor %}
