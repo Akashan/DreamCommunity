@@ -2,18 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc054e20-59a2-496a-9f78-b9d733bfe4d3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Form/ArticleType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/ajoutArticle.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/article.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/articleVue.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/formArticle.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/menuArticles.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Controller/WebsiteController.php" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Controller/WebsiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/index.html.twig" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/menuAdmin.html.twig" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/menuAdmin.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/parameters.yml" afterPath="$PROJECT_DIR$/app/config/parameters.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/config/routing.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DreamCommunity.iws" />
@@ -26,7 +14,7 @@
     <file path="/layout.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377114074432" ignored="false" />
     <file path="/menu.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377034143155" ignored="false" />
     <file path="/membres.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375286708086" ignored="false" />
-    <file path="/Dummy.txt" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377106229686" ignored="false" />
+    <file path="/Dummy.txt" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377117054102" ignored="false" />
     <file path="/membre.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377033853419" ignored="false" />
     <file path="/videos.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377035435193" ignored="false" />
     <file path="/video.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377032415599" ignored="false" />
@@ -221,7 +209,7 @@
       <file leaf-file-name="Articles.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/Articles.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="29" selection-start="1679" selection-end="1679" vertical-scroll-proportion="0.24943566">
+            <state line="95" column="29" selection-start="1679" selection-end="1679" vertical-scroll-proportion="0.3810345">
               <folding>
                 <element signature="e#89#216#0" expanded="false" />
                 <element signature="e#404#501#0" expanded="false" />
@@ -798,7 +786,15 @@
       <created>1376952459302</created>
       <updated>1376952459302</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="articles">
+      <created>1377117030351</created>
+      <updated>1377117030351</updated>
+    </task>
+    <task id="LOCAL-00006" summary="articles">
+      <created>1377117058216</created>
+      <updated>1377117058216</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -825,13 +821,14 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.325" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32478634" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249694" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1891065" sideWeight="0.6704675" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28495198" sideWeight="0.67094016" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28495198" sideWeight="0.67094016" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -841,7 +838,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -889,7 +885,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Videos + ajax" />
+    <option name="LAST_COMMIT_MESSAGE" value="articles" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -909,6 +905,7 @@
     <MESSAGE value="Form users" />
     <MESSAGE value="Del roles &amp; functions" />
     <MESSAGE value="Videos + ajax" />
+    <MESSAGE value="articles" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1106,7 +1103,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/Articles.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="29" selection-start="1679" selection-end="1679" vertical-scroll-proportion="0.24943566">
+        <state line="95" column="29" selection-start="1679" selection-end="1679" vertical-scroll-proportion="0.3810345">
           <folding>
             <element signature="e#89#216#0" expanded="false" />
             <element signature="e#404#501#0" expanded="false" />
