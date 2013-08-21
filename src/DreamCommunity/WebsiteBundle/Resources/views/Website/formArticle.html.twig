@@ -1,0 +1,20 @@
+<div class="well">
+    <form method="post" {{ form_enctype(form) }}>
+        {{ form_widget(form) }}
+        <script type="text/javascript">
+
+            var nowTemp = new Date();
+            var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+
+            var checkin = $('.datepicker').datepicker({
+                format: 'dd/mm/yyyy',
+                onRender: function(date) {
+                    return date.valueOf() < now.valueOf() ? 'disabled' : '';
+                }
+            }).data('datepicker');
+
+        </script>
+        <input type="submit" class="btn btn-primary" />
+        <input name="cancel" class="btn" type="submit" value="Cancel" formnovalidate/>
+    </form>
+</div>

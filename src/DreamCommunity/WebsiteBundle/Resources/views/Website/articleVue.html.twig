@@ -1,0 +1,22 @@
+<div class="row-fluid">
+    <div class="span12">
+        <h3>
+            {# Si on est sur la page d'accueil, on fait un lien vers l'article, sinon non #}
+            {% if accueil %}
+                <a href="{{ path('dream_community_website_article', {'id': article.id} ) }}">{{ article.titre }}</a>
+            {% endif %}
+        </h3>
+        <i>Le {{ article.datePublication|date('d/m/Y') }}, par {{ article.user.nom }}.</i>
+        <div class="well">
+            {{ article.contenu|raw|nl2br }}
+        </div>
+            <div class="well well-small" style="font-size: 12px;">
+                <i>
+                    Tags :
+                    {% for tag in article.keywords %}
+                        {{ tag }}{% if not loop.last %}, {% endif %}
+                    {% endfor %}
+                </i>
+            </div>
+    </div>
+</div>

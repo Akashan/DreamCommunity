@@ -1,6 +1,11 @@
 dream_community_website_accueil:
-    pattern:  /{id}
-    defaults: { _controller: DreamCommunityWebsiteBundle:Website:index, id: 1 }
+    pattern:  /{page}
+    defaults: { _controller: DreamCommunityWebsiteBundle:Website:index, page: 1 }
+    requirements:
+        id:  \d+
+dream_community_website_article:
+    pattern:  /article/{id}
+    defaults: { _controller: DreamCommunityWebsiteBundle:Website:article }
     requirements:
         id:  \d+
 dream_community_website_membres:
@@ -39,15 +44,15 @@ dream_community_website_liens:
     defaults: { _controller: DreamCommunityWebsiteBundle:Website:liens }
 
 dream_community_website_ajout_video:
-    pattern:  /ajouter/video
+    pattern:  /video/ajouter
     defaults: { _controller: DreamCommunityWebsiteBundle:Website:ajoutVideo }
 dream_community_website_modif_video:
-    pattern:  /modifier/video/{id}
+    pattern:  /video/modifier/{id}
     defaults: { _controller: DreamCommunityWebsiteBundle:Website:modifVideo }
     requirements:
         id:  \d+
 dream_community_website_supprim_video:
-    pattern:  /supprime/video/{id}
+    pattern:  /video/supprime/{id}
     defaults: { _controller: DreamCommunityWebsiteBundle:Website:supprimVideo }
     requirements:
         id:  \d+
@@ -70,5 +75,19 @@ dream_community_website_ajout_membre:
 dream_community_website_modif_membre:
     pattern:  /membres/modif/{id}
     defaults: { _controller: DreamCommunityWebsiteBundle:Website:modifMembre }
+    requirements:
+        id:  \d+
+
+dream_community_website_ajout_article:
+    pattern:  /articles/ajout/
+    defaults: { _controller: DreamCommunityWebsiteBundle:Website:ajoutArticle }
+dream_community_website_modif_article:
+    pattern:  /articles/modif/{id}
+    defaults: { _controller: DreamCommunityWebsiteBundle:Website:modifArticle }
+    requirements:
+        id:  \d+
+dream_community_website_supprim_article:
+    pattern:  /articles/supprimer/{id}
+    defaults: { _controller: DreamCommunityWebsiteBundle:Website:supprimArticle }
     requirements:
         id:  \d+

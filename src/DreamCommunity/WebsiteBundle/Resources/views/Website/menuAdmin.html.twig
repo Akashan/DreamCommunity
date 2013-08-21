@@ -9,5 +9,7 @@
     {% if is_granted('ROLE_SUPER_ADMIN') %}
         <li>&nbsp;</li>
         <li> <a href="{{ path('dream_community_website_ajout_membre') }}">Ajouter un membre</a> </li>
+        <li>&nbsp;</li>
+        <li> <a href="{{ path('dream_community_website_ajout_article') }}">Ajouter un article</a> </li>
     {% endif %}
 </ul>
