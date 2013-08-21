@@ -20,13 +20,13 @@ class VideoType extends AbstractType
             ->add('description','textarea', array(
                 'attr' => array('cols' => '75', 'rows' => '15'),
             ))
-            ->add('datePublication','date',array(
-                'input'  => 'datetime',
-                'empty_value' => array('year' => 'Année', 'month' => 'Mois', 'day' => 'Jour'),
-                'format' => 'dd MM yyyy',
-                'years' => range(date('Y'), date('Y')+2),
-                'widget' => 'choice',
-                'data' => new \DateTime('now', new DateTimeZone('Europe/Paris'))
+            ->add('datePublication','date', array(
+                'label' => 'Date de Publication',
+                'widget' => 'single_text',
+                'format' => 'dd/MM/yyyy',
+                'attr' => array(
+                    'class' => 'datepicker'
+                )
             ))
             ->add('tags', 'text', array(
                 'label' => "Tags (séparés par des virgules)",

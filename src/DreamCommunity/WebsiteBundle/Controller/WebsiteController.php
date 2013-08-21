@@ -162,7 +162,6 @@ class WebsiteController extends Controller
             if ($form->isValid()) {
 
                 $video->setDateCreation(new \DateTime());
-                $video->setMiniature("");
                 $video->setNbVue(0);
                 $video->setIsDeleted(false);
 
@@ -187,6 +186,7 @@ class WebsiteController extends Controller
 
         return $this->render('DreamCommunityWebsiteBundle:Website:ajoutVideo.html.twig', array(
             'form' => $form->createView(),
+            'formName' => "AJOUTVID"
         ));
     }
     /**
@@ -225,11 +225,10 @@ class WebsiteController extends Controller
             }
         }
 
-        $video->setTags('sdfsdf');
-
         return $this->render('DreamCommunityWebsiteBundle:Website:modifVideo.html.twig', array(
             'form'    => $form->createView(),
-            'video' => $video
+            'video' => $video,
+            'formName' => "MODIFVID"
         ));
     }
     /**

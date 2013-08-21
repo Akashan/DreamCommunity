@@ -109,7 +109,10 @@ class Video
      */
     public function getTags()
     {
-        return implode(',', $this->keywords);
+        if(!empty($this->keywords))
+            return implode(',', $this->keywords);
+        else
+            return "";
     }
 
     /**
