@@ -16,6 +16,37 @@ class WebsiteController extends Controller
 {
     public function indexAction($page)
     {
+        /*$user = new User;
+
+        $encoder = $this->get('security.encoder_factory')->getEncoder($user);
+        $encodedPass = $encoder->encodePassword("Aze021Ail!", $user->getSalt());
+
+        // Le nom d'utilisateur et le mot de passe sont identiques
+        $user->setUsername("Akashan");
+        $user->setPassword($encodedPass);
+        $user->setDescription("moi");
+        $user->setImage("");
+        $user->setEmail("akashan31@gmail.com");
+        $user->setIsDeleted(false);
+        $user->setIsValidated(true);
+        $user->setNbVue(0);
+        $user->setNom("Akashan");
+
+        $user->setLastLogin(new \Datetime());
+
+        // Le sel et les rôles sont vides pour l'instant
+        $user->setSalt('');
+        $user->setRoles(array('ROLE_SUPER_ADMIN'));
+
+        // On récupère l'EntityManager
+        $em = $this->getDoctrine()->getManager();
+
+        // Étape 1 : On « persiste » l'entité
+        $em->persist($user);
+
+        // Étape 2 : On « flush » tout ce qui a été persisté avant
+        $em->flush();*/
+
         if($page < 1)
             $page = 1;
 
@@ -178,7 +209,7 @@ class WebsiteController extends Controller
                 $em->flush();
 
                 // On définit un message flash
-                $this->get('session')->getFlashBag()->add('info', 'Membre bien ajouté');
+                $this->get('session')->getFlashBag()->add('info', 'Video ajoutée');
 
                 // On redirige vers la page de visualisation de l'article nouvellement créé
                 return $this->redirect($this->generateUrl('dream_community_website_video', array('id' => $video->getId())));
@@ -344,7 +375,7 @@ class WebsiteController extends Controller
                 $em->flush();
 
                 // On définit un message flash
-                $this->get('session')->getFlashBag()->add('info', 'Membre bien ajouté');
+                $this->get('session')->getFlashBag()->add('info', 'Membre ajouté');
 
                 // On redirige vers la page de visualisation de l'article nouvellement créé
                 return $this->redirect($this->generateUrl('dream_community_website_membre', array('id' => $user->getId())));
@@ -387,7 +418,7 @@ class WebsiteController extends Controller
                 $em->flush();
 
                 // On définit un message flash
-                $this->get('session')->getFlashBag()->add('info', 'Membre bien modifié');
+                $this->get('session')->getFlashBag()->add('info', 'Membre modifié');
 
                 return $this->redirect($this->generateUrl('dream_community_website_membre', array('id' => $user->getId())));
             }
@@ -436,7 +467,7 @@ class WebsiteController extends Controller
                 $em->flush();
 
                 // On définit un message flash
-                $this->get('session')->getFlashBag()->add('info', 'Article bien ajouté');
+                $this->get('session')->getFlashBag()->add('info', 'Article ajouté');
 
                 // On redirige vers la page de visualisation de l'article nouvellement créé
                 return $this->redirect($this->generateUrl('dream_community_website_accueil', array('id' => $article->getId())));

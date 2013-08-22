@@ -1,0 +1,17 @@
+{% extends "::layout.html.twig" %}
+
+{% block title %}
+    Erreur - {{ parent() }}
+{% endblock %}
+
+{% block dream_page_title %}
+    Dream Community
+{% endblock %}
+
+{% block dream_contenu %}
+    <p>
+        Une erreur s'est produite.<br>
+        Si ce problème persiste, contactez un administrateur.
+    </p>
+    <a class="btn btn-primary" href="{{ path('dream_community_website_accueil') }}">Retour Accueil</a>
+{% endblock %}

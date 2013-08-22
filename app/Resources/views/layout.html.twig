@@ -83,6 +83,13 @@
                 </div>
                 <div class="row-fluid">
                     <div class="span12">
+                        {% for key, flashMessages in app.session.flashbag.all() %}
+                            {% for message in flashMessages %}
+                                <div class="alert alert-{{ key }}">
+                                    {{ message }}
+                                </div>
+                            {% endfor %}
+                        {% endfor %}
                         {% block dream_contenu %}{% endblock %}
                     </div>
                 </div>

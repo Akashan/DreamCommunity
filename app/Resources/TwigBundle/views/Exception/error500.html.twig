@@ -1,7 +1,7 @@
 {% extends "::layout.html.twig" %}
 
 {% block title %}
-    Erreur 404 - {{ parent() }}
+    Erreur 500 - {{ parent() }}
 {% endblock %}
 
 {% block dream_page_title %}
@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block dream_contenu %}
-    <img src="{{ asset('img/error404.png') }}" /><br>
+    <img src="{{ asset('img/error_500.gif') }}" /><br>
     <p>
         Une erreur s'est produite.<br>
         Si ce problème persiste, contactez un administrateur.

@@ -13,8 +13,6 @@ Dream Community
         {# On inclut la vue à chaque itération dans la boucle #}
         {% include "DreamCommunityWebsiteBundle:Website:articleVue.html.twig" with {'accueil': true} %}
        <hr />
-    {% else %}
-        <p>Pas (encore !) d'articles</p>
     {% endfor %}
 
     <div class="pagination pagination-centered">
