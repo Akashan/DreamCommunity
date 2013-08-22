@@ -1,0 +1,21 @@
+{% extends "::layout.html.twig" %}
+
+{% block title %}
+    Article - {{ article.titre }} - {{ parent() }}
+{% endblock %}
+
+{% block dream_page_title %}
+    {{ article.titre }}
+{% endblock %}
+
+{% block dream_contenu %}
+    {% include "DreamCommunityWebsiteBundle:Website:articleVue.html.twig" with {'accueil': false} %}
+    <div style="margin-bottom: 5px;" class="row-fluid">
+        <div class="span12">
+            {% if is_granted('ROLE_SUPER_ADMIN') and article.user.id == user.id %}
+                <a class="btn btn-success" href="{{ path('dream_community_website_modif_article', {'id': article.id}) }}">Modifier l'article</a>
+                <a class="btn btn-danger" href="{{ path('dream_community_website_supprim_article', {'id': article.id}) }}">Supprimer l'article</a>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

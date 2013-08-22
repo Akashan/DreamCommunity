@@ -1,8 +1,10 @@
 <?php
 namespace DreamCommunity\WebsiteBundle\Controller;
 
+use DreamCommunity\WebsiteBundle\Entity\Articles;
 use DreamCommunity\WebsiteBundle\Entity\User;
 use DreamCommunity\WebsiteBundle\Entity\Video;
+use DreamCommunity\WebsiteBundle\Form\ArticleType;
 use DreamCommunity\WebsiteBundle\Form\UserType;
 use DreamCommunity\WebsiteBundle\Form\UserEditType;
 use DreamCommunity\WebsiteBundle\Form\VideoType;
@@ -12,40 +14,43 @@ use JMS\SecurityExtraBundle\Annotation\Secure;
 
 class WebsiteController extends Controller
 {
-    public function indexAction($id)
+    public function indexAction($page)
     {
-        /*$user = new User;
+        if($page < 1)
+            $page = 1;
 
-        $encoder = $this->get('security.encoder_factory')->getEncoder($user);
-        $encodedPass = $encoder->encodePassword("Aze021Ail!", $user->getSalt());
+        $nbEltParPage = 10;
 
-        // Le nom d'utilisateur et le mot de passe sont identiques
-        $user->setUsername("Akashan");
-        $user->setPassword($encodedPass);
-        $user->setDescription("moi");
-        $user->setImage("xxx");
-        $user->setEmail("akashan31@gmail.com");
-        $user->setIsDeleted(false);
-        $user->setIsValidated(true);
-        $user->setNbVue(0);
-        $user->setNom("Akashan");
+        if($this->container->getParameter('articles.nbElementParPage'))
+            $nbEltParPage = $this->container->getParameter('articles.nbElementParPage');
 
-        $user->setLastLogin(new \Datetime());
+        $liste = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('DreamCommunityWebsiteBundle:Articles')
+            ->getArticles($nbEltParPage, $page);
 
-        // Le sel et les rôles sont vides pour l'instant
-        $user->setSalt('');
-        $user->setRoles(array('ROLE_SUPER_ADMIN'));
+        return $this->render('DreamCommunityWebsiteBundle:Website:index.html.twig', array(
+            'liste_articles'   => $liste,
+            'page'       => $page,
+            'nombrePage' => ceil(count($liste)/$nbEltParPage)
+        ));
+    }
+    public function articleAction($id)
+    {
+        $user = $this->getUser();
 
-        // On récupère l'EntityManager
-        $em = $this->getDoctrine()->getManager();
+        $repository = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('DreamCommunityWebsiteBundle:Articles');
 
-        // Étape 1 : On « persiste » l'entité
-        $em->persist($user);
+        $article = $repository->find($id);
 
-        // Étape 2 : On « flush » tout ce qui a été persisté avant
-        $em->flush();*/
+        $str = $article->getContenu();
+        // On récupère le service
+        $autoLinker = $this->container->get('dc_autolinker');
+        $article->setContenu($autoLinker->auto_link_text($str));
 
-        return $this->render('DreamCommunityWebsiteBundle:Website:index.html.twig', array());
+        return $this->render('DreamCommunityWebsiteBundle:Website:article.html.twig', array('article' => $article, 'user' => $user));
     }
     public function membresAction()
     {
@@ -394,6 +399,66 @@ class WebsiteController extends Controller
         ));
     }
 
+    /**
+     * @Secure(roles="ROLE_SUPER_ADMIN")
+     */
+    public function ajoutArticleAction()
+    {
+        $article = new Articles();
+
+        // On crée le formulaire grâce à l'ArticleType
+        $form = $this->createForm(new ArticleType(), $article);
+
+        // On récupère la requête
+        $request = $this->getRequest();
+
+        if( $request->get('cancel') == 'Cancel' )
+            return $this->redirect($this->generateUrl('dream_community_website_accueil'));
+
+        // On vérifie qu'elle est de type POST
+        if ($request->getMethod() == 'POST') {
+            // On fait le lien Requête <-> Formulaire
+            $form->bind($request);
+
+            // On vérifie que les valeurs entrées sont correctes
+            // (Nous verrons la validation des objets en détail dans le prochain chapitre)
+            if ($form->isValid()) {
+
+                $article->setDateCreation(new \DateTime());
+                $article->setNbVue(0);
+                $article->setIsDeleted(false);
+
+                $article->setUser($this->getUser());
+                // On enregistre notre objet $article dans la base de données
+                $em = $this->getDoctrine()->getManager();
+
+                $em->persist($article);
+                $em->flush();
+
+                // On définit un message flash
+                $this->get('session')->getFlashBag()->add('info', 'Article bien ajouté');
+
+                // On redirige vers la page de visualisation de l'article nouvellement créé
+                return $this->redirect($this->generateUrl('dream_community_website_accueil', array('id' => $article->getId())));
+            }
+        }
+
+        // À ce stade :
+        // - Soit la requête est de type GET, donc le visiteur vient d'arriver sur la page et veut voir le formulaire
+        // - Soit la requête est de type POST, mais le formulaire n'est pas valide, donc on l'affiche de nouveau
+
+        return $this->render('DreamCommunityWebsiteBundle:Website:ajoutArticle.html.twig', array(
+            'form' => $form->createView()
+        ));
+    }
+    /**
+     * @Secure(roles="ROLE_SUPER_ADMIN")
+     */
+    public function modifArticleAction()
+    {
+
+    }
+
     public function menuAdminAction(){
         return $this->render('DreamCommunityWebsiteBundle:Website:menuAdmin.html.twig');
     }
@@ -407,6 +472,18 @@ class WebsiteController extends Controller
 
         return $this->render('DreamCommunityWebsiteBundle:Website:menu.html.twig', array(
             'liste_videos' => $liste // C'est ici tout l'intérêt : le contrôleur passe les variables nécessaires au template !
+        ));
+    }
+    public function menuArticlesAction($nb)
+    {
+        $repository = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('DreamCommunityWebsiteBundle:Articles');
+
+        $liste = $repository->findBy(array('isDeleted' => false), array('datePublication' => 'desc', 'id' => 'desc'), 5, 0);
+
+        return $this->render('DreamCommunityWebsiteBundle:Website:menuArticles.html.twig', array(
+            'liste_articles' => $liste // C'est ici tout l'intérêt : le contrôleur passe les variables nécessaires au template !
         ));
     }
 

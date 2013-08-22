@@ -1,0 +1,5 @@
+<h5>Derniers Articles</h5>
+{% for article in liste_articles %}
+    <p style="font-size:12px;"><a href="{{ path('dream_community_website_article', {'id': article.id}) }}">{{ article.titre|length > 20 ? article.titre|slice(0, 20) ~ '...' : article.titre }}</a><br>
+    <span class="pull-left" style="font-size:10px;margin-top:-10px;">Par {{ article.user.nom }}.</span></p>
+{% endfor %}
