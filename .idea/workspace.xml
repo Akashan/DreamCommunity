@@ -2,58 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc054e20-59a2-496a-9f78-b9d733bfe4d3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/bootstrap-datepicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/datepicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/Video.php" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/Video.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Form/VideoType.php" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Form/VideoType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Controller/WebsiteController.php" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Controller/WebsiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/formVideo.html.twig" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/formVideo.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/articleVue.html.twig" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/articleVue.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/config/routing.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DreamCommunity.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/parameters.yml" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375276111697" ignored="false" />
-    <file path="/routing.yml" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375452284455" ignored="false" />
-    <file path="/a.dummy" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375368231098" ignored="false" />
-    <file path="$PROJECT_DIR$/app/cache/dev/appDevUrlMatcher.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375276509388" ignored="false" />
-    <file path="$PROJECT_DIR$/app/cache/dev/appDevUrlGenerator.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375276509388" ignored="false" />
-    <file path="/WebsiteController.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377010527235" ignored="false" />
-    <file path="$PROJECT_DIR$/app/cache/dev/appDevDebugProjectContainer.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375282206822" ignored="false" />
+    <file path="/parameters.yml" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377035672661" ignored="false" />
+    <file path="/routing.yml" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377035350166" ignored="false" />
+    <file path="/a.dummy" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376944966384" ignored="false" />
+    <file path="/WebsiteController.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377042463128" ignored="false" />
     <file path="/index.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375285724312" ignored="false" />
-    <file path="/layout.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377076795086" ignored="false" />
-    <file path="/menu.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375285369966" ignored="false" />
-    <file path="/membres.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376382344094" ignored="false" />
-    <file path="/Dummy.txt" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377070561716" ignored="false" />
-    <file path="/membre.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376382217196" ignored="false" />
-    <file path="/videos.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377010845598" ignored="false" />
-    <file path="/video.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377011039079" ignored="false" />
+    <file path="/layout.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376945089298" ignored="false" />
+    <file path="/menu.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377034143155" ignored="false" />
+    <file path="/membres.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375286708086" ignored="false" />
+    <file path="/Dummy.txt" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377159578938" ignored="false" />
+    <file path="/membre.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377033853419" ignored="false" />
+    <file path="/videos.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377035435193" ignored="false" />
+    <file path="/video.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377032415599" ignored="false" />
     <file path="/contacts.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375365027056" ignored="false" />
     <file path="/liens.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375365043221" ignored="false" />
     <file path="/Function.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375368195811" ignored="false" />
     <file path="/FonctionRepository.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375368261694" ignored="false" />
     <file path="/RoleFunction.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375368465116" ignored="false" />
     <file path="/UserRole.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375369064074" ignored="false" />
-    <file path="/User.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375448528490" ignored="false" />
-    <file path="/Video.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377075962313" ignored="false" />
-    <file path="/dream.css" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375452956883" ignored="false" />
-    <file path="/menuAdmin.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375451736519" ignored="false" />
-    <file path="/vueProfil.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376990054427" ignored="false" />
-    <file path="/modifProfil.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376381478021" ignored="false" />
-    <file path="/ajoutVideo.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377004012331" ignored="false" />
-    <file path="/mesVideos.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376381547391" ignored="false" />
-    <file path="/modifVideo.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376381598490" ignored="false" />
-    <file path="/supprimVideo.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376381619786" ignored="false" />
-    <file path="/DreamCommunityUserBundle.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376984909888" ignored="false" />
-    <file path="/services.yml" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376986668778" ignored="false" />
-    <file path="/LoginListener.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376985973421" ignored="false" />
-    <file path="/LoginSuccessHandler.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376989254665" ignored="false" />
-    <file path="/LogoutSuccessHandler.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376988351747" ignored="false" />
-    <file path="/security.yml" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376988448014" ignored="false" />
-    <file path="/VideoType.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377010044453" ignored="false" />
-    <file path="/formVideo.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377095003366" ignored="false" />
-    <file path="/KeywordType.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377008168755" ignored="false" />
-    <file path="/Keyword.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377008738989" ignored="false" />
+    <file path="/User.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376948069133" ignored="false" />
+    <file path="/Video.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377042393142" ignored="false" />
+    <file path="/dream.css" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375373334767" ignored="false" />
+    <file path="/WebsiteController.php.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376943872274" ignored="false" />
+    <file path="/SecurityController.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376944083346" ignored="false" />
+    <file path="/login.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376948621938" ignored="false" />
+    <file path="/security.yml" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376946105253" ignored="false" />
+    <file path="/UserType.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376949508393" ignored="false" />
+    <file path="/ajoutMembre.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376951631449" ignored="false" />
+    <file path="/menuAdmin.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376950673868" ignored="false" />
+    <file path="/modifMembre.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376951661072" ignored="false" />
+    <file path="/UserEditType.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376951952347" ignored="false" />
+    <file path="/formMembre.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376952286441" ignored="false" />
+    <file path="/DcAutoLinkText.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377033561808" ignored="false" />
+    <file path="/services.yml" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377033531133" ignored="false" />
+    <file path="/vueProfil.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377033923051" ignored="false" />
+    <file path="/VideoRepository.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377034994100" ignored="false" />
+    <file path="/formVideo.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377043986208" ignored="false" />
+    <file path="/VideoType.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377038834628" ignored="false" />
+    <file path="/articleVue.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377162309758" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,22 +93,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/DreamCommunity/UserBundle/Handler/LogoutSuccessHandler.php" />
-        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/membre.html.twig" />
-        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/modifProfil.html.twig" />
+        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/TextHelper/DcAutoLinkText.php" />
         <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/vueProfil.html.twig" />
-        <option value="$PROJECT_DIR$/src/DreamCommunity/UserBundle/Handler/LoginSuccessHandler.php" />
-        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/ajoutVideo.html.twig" />
-        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/Keyword.php" />
-        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Form/KeywordType.php" />
+        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/membre.html.twig" />
+        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/menu.html.twig" />
+        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/VideoRepository.php" />
         <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/videos.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/video.html.twig" />
         <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/Video.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
-        <option value="$PROJECT_DIR$/web/js/bootstrap-datepicker.js" />
         <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Controller/WebsiteController.php" />
-        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/formVideo.html.twig" />
         <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Form/VideoType.php" />
+        <option value="$PROJECT_DIR$/web/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/formVideo.html.twig" />
+        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/app/config/_parameters.yml" />
+        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/articleVue.html.twig" />
       </list>
     </option>
   </component>
@@ -157,7 +149,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -186,406 +177,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebsiteBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebsiteBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TextHelper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebsiteBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebsiteBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebsiteBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebsiteBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebsiteBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebsiteBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Handler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DreamCommunity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -594,17 +192,17 @@
     <property name="options.lastSelected" value="vcs.Git" />
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/app_dev.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/config/parameters.yml" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="PublishConfig" serverName="Dream Community" serverId="e3e2bf7c-9900-4987-9c35-89a6f29c330c" createEmptyFolders="true" showNewOnTargetInSync="false">
+  <component name="PublishConfig">
     <servers>
       <server id="e3e2bf7c-9900-4987-9c35-89a6f29c330c">
         <serverdata>
@@ -614,17 +212,17 @@
           <excludedPaths>
             <ExcludedPath>
               <option name="local" value="true" />
-              <option name="path" value="C:\wamp\www\DreamCommunity\app\cache\dev\" />
+              <option name="path" value="C:\wamp\www\DreamCommunity\app\cache" />
             </ExcludedPath>
             <ExcludedPath>
               <option name="local" value="true" />
-              <option name="path" value="C:\wamp\www\DreamCommunity\app\cache\prod\" />
+              <option name="path" value="C:\wamp\www\DreamCommunity\app\logs" />
             </ExcludedPath>
             <ExcludedPath>
-              <option name="path" value="/app/cache/dev" />
+              <option name="path" value="/app/cache" />
             </ExcludedPath>
             <ExcludedPath>
-              <option name="path" value="/app/cache/prod" />
+              <option name="path" value="/app/logs" />
             </ExcludedPath>
             <ExcludedPath>
               <option name="local" value="true" />
@@ -632,13 +230,6 @@
             </ExcludedPath>
             <ExcludedPath>
               <option name="path" value="/app/config/parameters.yml" />
-            </ExcludedPath>
-            <ExcludedPath>
-              <option name="local" value="true" />
-              <option name="path" value="C:\wamp\www\DreamCommunity\web\app_dev.php" />
-            </ExcludedPath>
-            <ExcludedPath>
-              <option name="path" value="/web/app_dev.php" />
             </ExcludedPath>
           </excludedPaths>
         </serverdata>
@@ -649,12 +240,11 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp\www\DreamCommunity\src\DreamCommunity\WebsiteBundle\Form" />
       <recent name="C:\wamp\www\DreamCommunity\src\DreamCommunity\WebsiteBundle\Resources\views\Website" />
-      <recent name="C:\wamp\www\DreamCommunity\src\DreamCommunity\UserBundle\Handler" />
-      <recent name="C:\wamp\www\DreamCommunity\src\DreamCommunity\UserBundle" />
+      <recent name="C:\wamp\www\DreamCommunity\vendor\sensio\generator-bundle\Sensio\Bundle\GeneratorBundle\Resources\skeleton\bundle" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp\www\DreamCommunity\web\css" />
-      <recent name="C:\wamp\www\DreamCommunity\web\js" />
+      <recent name="C:\wamp\www\DreamCommunity\app\Resources\views" />
+      <recent name="C:\wamp\www\DreamCommunity\src\DreamCommunity\UserBundle\Resources\views\Security" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Built-in Web Server.DreamCommunity">
@@ -668,10 +258,10 @@
     <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application">
       <method />
     </configuration>
-    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug">
+    <configuration default="true" type="PhpHttpRequestRunConfigurationType" factoryName="PHP HTTP Request">
       <method />
     </configuration>
-    <configuration default="true" type="PhpHttpRequestRunConfigurationType" factoryName="PHP HTTP Request">
+    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug">
       <method />
     </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
@@ -693,14 +283,14 @@
       <JdkChoice value="FROM_MODULE" />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="e3e2bf7c-9900-4987-9c35-89a6f29c330c" server_name="Dream Community">
       <method />
     </configuration>
     <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
@@ -751,19 +341,15 @@
       <created>1375370402125</created>
       <updated>1375370402125</updated>
     </task>
-    <task id="LOCAL-00003" summary="Membre view">
-      <created>1375373551480</created>
-      <updated>1375373551480</updated>
+    <task id="LOCAL-00003" summary="Form users">
+      <created>1376952349191</created>
+      <updated>1376952349191</updated>
     </task>
-    <task id="LOCAL-00004" summary="Membre view">
-      <created>1375457872441</created>
-      <updated>1375457872441</updated>
+    <task id="LOCAL-00004" summary="Del roles &amp; functions">
+      <created>1376952459302</created>
+      <updated>1376952459302</updated>
     </task>
-    <task id="LOCAL-00005" summary="Videos + login">
-      <created>1377011186165</created>
-      <updated>1377011186165</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -790,24 +376,24 @@
     <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3249715" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33067274" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.325" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249694" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1891065" sideWeight="0.6704675" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.67007965" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20685434" sideWeight="0.6704675" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992035" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32839224" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -855,7 +441,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Videos + login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Videos + ajax" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -872,189 +458,197 @@
     <MESSAGE value="Views create" />
     <MESSAGE value="Entities create" />
     <MESSAGE value="Membre view" />
-    <MESSAGE value="Création des dernières pages" />
-    <MESSAGE value="Videos + login" />
+    <MESSAGE value="Form users" />
+    <MESSAGE value="Del roles &amp; functions" />
+    <MESSAGE value="Videos + ajax" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/Keyword.php">
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="45" selection-start="17" selection-end="52" vertical-scroll-proportion="-1.3076923" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/ajoutVideo.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/formVideo.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="61" selection-start="252" selection-end="252" vertical-scroll-proportion="0.22666667" />
+        <state line="18" column="78" selection-start="749" selection-end="749" vertical-scroll-proportion="0.30699775" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Form/KeywordType.php">
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/VideoRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="16" selection-start="699" selection-end="739" vertical-scroll-proportion="0.5357576" />
+        <state line="26" column="40" selection-start="837" selection-end="837" vertical-scroll-proportion="0.49887133" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/membres.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/videos.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
+        <state line="16" column="40" selection-start="564" selection-end="564" vertical-scroll-proportion="0.30699775" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/video.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/menu.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="409" selection-end="409" vertical-scroll-proportion="0.2678788" />
+        <state line="2" column="164" selection-start="190" selection-end="222" vertical-scroll-proportion="-1.3076923">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/UserBundle/Handler/LoginSuccessHandler.php">
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="13" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.46182495" />
+        <state line="11" column="22" selection-start="400" selection-end="400" vertical-scroll-proportion="0.21974148">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/contacts.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/bootstrap.css">
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1399" column="12" selection-start="21065" selection-end="21068" vertical-scroll-proportion="0.33251533">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1339" column="9" selection-start="37288" selection-end="37289" vertical-scroll-proportion="0.33333334">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/bootstrap-datepicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="377" column="37" selection-start="10975" selection-end="10975" vertical-scroll-proportion="0.51817113">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="61" selection-start="394" selection-end="394" vertical-scroll-proportion="0.20556228">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/Video.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="7" selection-start="1844" selection-end="1844" vertical-scroll-proportion="0.72188634">
-          <folding>
-            <element signature="e#89#210#0" expanded="false" />
-            <element signature="e#229#372#0" expanded="false" />
-            <element signature="e#395#495#0" expanded="false" />
-            <element signature="e#524#621#0" expanded="false" />
-            <element signature="e#647#748#0" expanded="false" />
-            <element signature="e#778#867#0" expanded="false" />
-            <element signature="e#899#996#0" expanded="false" />
-            <element signature="e#1029#1129#0" expanded="false" />
-            <element signature="e#1165#1251#0" expanded="false" />
-            <element signature="e#1280#1367#0" expanded="false" />
-            <element signature="e#1393#1484#0" expanded="false" />
-            <element signature="e#1514#1643#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Controller/WebsiteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="230" column="35" selection-start="8198" selection-end="8206" vertical-scroll-proportion="-28.538462">
+        <state line="37" column="32" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.15878788">
           <folding>
-            <element signature="e#502#1674#0" expanded="false" />
-            <element signature="e#549#1573#0" expanded="false" />
-            <element signature="e#1679#2029#0" expanded="false" />
-            <element signature="e#1739#1850#0" expanded="false" />
-            <element signature="e#2034#2579#0" expanded="false" />
-            <element signature="e#2096#2207#0" expanded="false" />
-            <element signature="e#2584#3589#0" expanded="false" />
-            <element signature="e#2876#2988#0" expanded="false" />
-            <element signature="e#2876#3034#0" expanded="false" />
-            <element signature="e#3100#3277#0" expanded="false" />
-            <element signature="e#3358#3582#0" expanded="false" />
-            <element signature="e#3428#3581#0" expanded="false" />
-            <element signature="e#3594#4313#0" expanded="false" />
-            <element signature="e#3690#3802#0" expanded="false" />
-            <element signature="e#4318#4453#0" expanded="false" />
-            <element signature="e#4458#4599#0" expanded="false" />
-            <element signature="e#4604#4739#0" expanded="false" />
-            <element signature="e#4745#4809#0" expanded="false" />
-            <element signature="e#6821#6885#0" expanded="false" />
-            <element signature="e#8230#8294#0" expanded="false" />
-            <element signature="e#8299#8446#0" expanded="false" />
-            <element signature="e#8452#8516#0" expanded="false" />
-            <element signature="e#8521#9177#0" expanded="false" />
-            <element signature="e#8599#9171#0" expanded="false" />
-            <element signature="e#8815#9171#0" expanded="false" />
-            <element signature="e#9182#9246#0" expanded="false" />
-            <element signature="e#9251#10349#0" expanded="false" />
-            <element signature="e#9625#10159#0" expanded="false" />
-            <element signature="e#9712#10149#0" expanded="false" />
-            <element signature="e#10176#10342#0" expanded="false" />
-            <element signature="e#10251#10341#0" expanded="false" />
-            <element signature="e#10354#10418#0" expanded="false" />
-            <element signature="e#10423#10561#0" expanded="false" />
-            <element signature="e#10567#10619#0" expanded="false" />
-            <element signature="e#10624#12781#0" expanded="false" />
-            <element signature="e#11074#12366#0" expanded="false" />
-            <element signature="e#11371#12356#0" expanded="false" />
-            <element signature="e#12639#12774#0" expanded="false" />
-            <element signature="e#12714#12773#0" expanded="false" />
-            <element signature="e#12786#12838#0" expanded="false" />
-            <element signature="e#12843#14142#0" expanded="false" />
-            <element signature="e#12905#13016#0" expanded="false" />
-            <element signature="e#13386#13952#0" expanded="false" />
-            <element signature="e#13473#13942#0" expanded="false" />
-            <element signature="e#13969#14135#0" expanded="false" />
-            <element signature="e#14044#14134#0" expanded="false" />
-            <element signature="e#14148#14277#0" expanded="false" />
-            <element signature="e#14282#14817#0" expanded="false" />
-            <element signature="e#14342#14454#0" expanded="false" />
-            <element signature="e#14598#14810#0" expanded="false" />
-            <element signature="e#14666#14809#0" expanded="false" />
+            <element signature="e#603#1311#0" expanded="false" />
+            <element signature="e#898#1013#0" expanded="false" />
+            <element signature="e#898#1061#0" expanded="false" />
+            <element signature="e#1079#1304#0" expanded="false" />
+            <element signature="e#1148#1303#0" expanded="false" />
+            <element signature="e#1316#1916#0" expanded="false" />
+            <element signature="e#1414#1529#0" expanded="false" />
+            <element signature="e#1921#2271#0" expanded="false" />
+            <element signature="e#1981#2092#0" expanded="false" />
+            <element signature="e#2276#2821#0" expanded="false" />
+            <element signature="e#2338#2449#0" expanded="false" />
+            <element signature="e#2826#3831#0" expanded="false" />
+            <element signature="e#3118#3230#0" expanded="false" />
+            <element signature="e#3118#3276#0" expanded="false" />
+            <element signature="e#3342#3519#0" expanded="false" />
+            <element signature="e#3600#3824#0" expanded="false" />
+            <element signature="e#3670#3823#0" expanded="false" />
+            <element signature="e#3836#4555#0" expanded="false" />
+            <element signature="e#3932#4044#0" expanded="false" />
+            <element signature="e#4560#4695#0" expanded="false" />
+            <element signature="e#4987#5051#0" expanded="false" />
+            <element signature="e#5056#7058#0" expanded="false" />
+            <element signature="e#5510#6607#0" expanded="false" />
+            <element signature="e#5807#6597#0" expanded="false" />
+            <element signature="e#6880#7051#0" expanded="false" />
+            <element signature="e#6954#7050#0" expanded="false" />
+            <element signature="e#7063#7127#0" expanded="false" />
+            <element signature="e#7132#8467#0" expanded="false" />
+            <element signature="e#7194#7306#0" expanded="false" />
+            <element signature="e#7675#8238#0" expanded="false" />
+            <element signature="e#7762#8228#0" expanded="false" />
+            <element signature="e#8255#8460#0" expanded="false" />
+            <element signature="e#8329#8459#0" expanded="false" />
+            <element signature="e#8472#8536#0" expanded="false" />
+            <element signature="e#8541#8688#0" expanded="false" />
+            <element signature="e#8694#8758#0" expanded="false" />
+            <element signature="e#8763#9419#0" expanded="false" />
+            <element signature="e#8841#9413#0" expanded="false" />
+            <element signature="e#9057#9413#0" expanded="false" />
+            <element signature="e#9424#9488#0" expanded="false" />
+            <element signature="e#9493#10591#0" expanded="false" />
+            <element signature="e#9867#10401#0" expanded="false" />
+            <element signature="e#9954#10391#0" expanded="false" />
+            <element signature="e#10418#10584#0" expanded="false" />
+            <element signature="e#10493#10583#0" expanded="false" />
+            <element signature="e#10596#10660#0" expanded="false" />
+            <element signature="e#10665#10803#0" expanded="false" />
+            <element signature="e#10809#10861#0" expanded="false" />
+            <element signature="e#10866#13023#0" expanded="false" />
+            <element signature="e#11316#12608#0" expanded="false" />
+            <element signature="e#11613#12598#0" expanded="false" />
+            <element signature="e#12881#13016#0" expanded="false" />
+            <element signature="e#12956#13015#0" expanded="false" />
+            <element signature="e#13028#13080#0" expanded="false" />
+            <element signature="e#13085#14384#0" expanded="false" />
+            <element signature="e#13147#13258#0" expanded="false" />
+            <element signature="e#13628#14194#0" expanded="false" />
+            <element signature="e#13715#14184#0" expanded="false" />
+            <element signature="e#14211#14377#0" expanded="false" />
+            <element signature="e#14286#14376#0" expanded="false" />
+            <element signature="e#14390#14442#0" expanded="false" />
+            <element signature="e#14447#16445#0" expanded="false" />
+            <element signature="e#14918#16030#0" expanded="false" />
+            <element signature="e#15215#16020#0" expanded="false" />
+            <element signature="e#16303#16438#0" expanded="false" />
+            <element signature="e#16379#16437#0" expanded="false" />
+            <element signature="e#16450#16502#0" expanded="false" />
+            <element signature="e#16507#16556#0" expanded="false" />
+            <element signature="e#16562#16691#0" expanded="false" />
+            <element signature="e#16696#17231#0" expanded="false" />
+            <element signature="e#16756#16868#0" expanded="false" />
+            <element signature="e#17012#17224#0" expanded="false" />
+            <element signature="e#17080#17223#0" expanded="false" />
+            <element signature="e#17236#17792#0" expanded="false" />
+            <element signature="e#17304#17419#0" expanded="false" />
+            <element signature="e#17563#17785#0" expanded="false" />
+            <element signature="e#17639#17784#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/formVideo.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/AppCache.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="46" selection-start="1462" selection-end="1462" vertical-scroll-proportion="-13.076923">
-          <folding>
-            <marker date="1377095085633" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1377095085633" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Form/VideoType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="59" selection-start="468" selection-end="468" vertical-scroll-proportion="0.24667473">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/videos.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="4" selection-start="196" selection-end="219" vertical-scroll-proportion="0.2261185">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#269#300#0" expanded="true" />
-            <element signature="e#410#433#0" expanded="true" />
-            <element signature="e#573#628#0" expanded="true" />
-            <element signature="e#656#696#0" expanded="true" />
+            <element signature="e#7#47#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="46" selection-start="515" selection-end="515" vertical-scroll-proportion="0.3090909">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/articleVue.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="23" selection-start="786" selection-end="786" vertical-scroll-proportion="0.32969698">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/_parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="33" selection-start="499" selection-end="499" vertical-scroll-proportion="0.29964748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bootstrap.php.cache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.8603818">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="42" selection-start="399" selection-end="465" vertical-scroll-proportion="0.2596945">
+          <folding />
         </state>
       </provider>
     </entry>
