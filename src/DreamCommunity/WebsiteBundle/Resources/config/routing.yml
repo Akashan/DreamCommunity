@@ -2,7 +2,7 @@ dream_community_website_accueil:
     pattern:  /{page}
     defaults: { _controller: DreamCommunityWebsiteBundle:Website:index, page: 1 }
     requirements:
-        id:  \d+
+        page:  \d+
 dream_community_website_article:
     pattern:  /article/{id}
     defaults: { _controller: DreamCommunityWebsiteBundle:Website:article }
