@@ -16,6 +16,7 @@
                 <a class="btn btn-success" href="{{ path('dream_community_website_modif_article', {'id': article.id}) }}">Modifier l'article</a>
                 <a class="btn btn-danger" href="{{ path('dream_community_website_supprim_article', {'id': article.id}) }}">Supprimer l'article</a>
             {% endif %}
+            <a class="btn btn-primary" href="{{ path('dream_community_website_accueil') }}">Retour</a>
         </div>
     </div>
 {% endblock %}

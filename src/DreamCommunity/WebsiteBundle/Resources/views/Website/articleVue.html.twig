@@ -9,11 +9,11 @@
         <i>Le {{ article.datePublication|date('d/m/Y') }}, par {{ article.user.nom }}.</i>
         <div class="well">
             {% if accueil %}
-                {{ article.contenu|raw|striptags|slice(0, 300) ~ '...' }}
+                {{ article.contenu|substring('#CUT#')|raw|nl2br }}
                 <br>
                 <a href="{{ path('dream_community_website_article', {'id': article.id} ) }}">Lire la suite</a>
             {% else %}
-                {{ article.contenu|raw|nl2br }}
+                {{ article.contenu|replace({'#CUT#':""})|raw|nl2br }}
             {% endif %}
         </div>
             <div class="well well-small" style="font-size: 12px;">

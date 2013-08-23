@@ -3,6 +3,10 @@ parameters:
     user_bundle.handler.logout_success_handler.class: DreamCommunity\UserBundle\Handler\LogoutSuccessHandler
     
 services:
+    dc.twig.substring_extension:
+        class: DreamCommunity\WebsiteBundle\Twig\SubStringExtension
+        tags:
+            - { name: twig.extension }
     dc_autolinker:
         class: DreamCommunity\WebsiteBundle\TextHelper\DcAutoLinkText
     user_bundle.handler.login_success_handler:
