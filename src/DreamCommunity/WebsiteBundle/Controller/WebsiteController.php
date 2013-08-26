@@ -431,7 +431,7 @@ class WebsiteController extends Controller
     }
 
     /**
-     * @Secure(roles="ROLE_SUPER_ADMIN")
+     * @Secure(roles="ROLE_ADMIN")
      */
     public function ajoutArticleAction()
     {
@@ -483,7 +483,7 @@ class WebsiteController extends Controller
         ));
     }
     /**
-     * @Secure(roles="ROLE_SUPER_ADMIN")
+     * @Secure(roles="ROLE_ADMIN")
      */
     public function modifArticleAction()
     {

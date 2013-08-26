@@ -27,7 +27,7 @@ class UserType extends AbstractType
                     'ROLE_SUPER_ADMIN' => 'Super Administrateur',
                     'ROLE_ADMIN' => 'Administrateur',
                     'ROLE_USER' => 'Utilisateur')))
-            ->add('image','text', array('required'  => false))
+            ->add('image','text')
             ->add('urlYoutube','text', array('required'  => false))
             ->add('urlTwitter','text', array('required'  => false))
             ->add('urlFacebook','text', array('required'  => false))
