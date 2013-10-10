@@ -4,6 +4,7 @@ namespace DreamCommunity\WebsiteBundle\Controller;
 use DreamCommunity\WebsiteBundle\Entity\Articles;
 use DreamCommunity\WebsiteBundle\Entity\User;
 use DreamCommunity\WebsiteBundle\Entity\Video;
+use DreamCommunity\WebsiteBundle\Form\ArticleEditType;
 use DreamCommunity\WebsiteBundle\Form\ArticleType;
 use DreamCommunity\WebsiteBundle\Form\UserType;
 use DreamCommunity\WebsiteBundle\Form\UserEditType;
@@ -485,9 +486,42 @@ class WebsiteController extends Controller
     /**
      * @Secure(roles="ROLE_ADMIN")
      */
-    public function modifArticleAction()
+    public function modifArticleAction($id)
     {
+        $repository = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('DreamCommunityWebsiteBundle:Articles');
 
+        $article = $repository->find($id);
+
+        // On utiliser le ArticleEditType
+        $form = $this->createForm(new ArticleEditType(), $article);
+
+        $request = $this->getRequest();
+
+        if( $request->get('cancel') == 'Cancel' )
+            return $this->redirect($this->generateUrl('dream_community_website_accueil', array()));
+
+        if ($request->getMethod() == 'POST') {
+            $form->bind($request);
+
+            if ($form->isValid()) {
+                // On enregistre l'article
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($article);
+                $em->flush();
+
+                // On définit un message flash
+                $this->get('session')->getFlashBag()->add('info', 'Article modifié');
+
+                return $this->redirect($this->generateUrl('dream_community_website_accueil', array()));
+            }
+        }
+
+        return $this->render('DreamCommunityWebsiteBundle:Website:modifArticle.html.twig', array(
+            'form'    => $form->createView(),
+            'article' => $article
+        ));
     }
 
     public function menuAdminAction(){

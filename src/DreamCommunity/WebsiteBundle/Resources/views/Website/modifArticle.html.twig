@@ -1,0 +1,13 @@
+{% extends "::layout.html.twig" %}
+
+{% block title %}
+    Article - {{ article.titre }} - {{ parent() }}
+{% endblock %}
+
+{% block dream_page_title %}
+Modifier l'article
+{% endblock %}
+
+{% block dream_contenu %}
+    {% include "DreamCommunityWebsiteBundle:Website:formArticle.html.twig" %}
+{% endblock %}
