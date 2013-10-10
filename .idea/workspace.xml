@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc054e20-59a2-496a-9f78-b9d733bfe4d3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Form/UserType.php" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Form/UserType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Controller/WebsiteController.php" afterPath="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Controller/WebsiteController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DreamCommunity.iws" />
@@ -9,12 +11,12 @@
     <file path="/parameters.yml" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377035672661" ignored="false" />
     <file path="/routing.yml" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377035350166" ignored="false" />
     <file path="/a.dummy" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376944966384" ignored="false" />
-    <file path="/WebsiteController.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1381322494096" ignored="false" />
+    <file path="/WebsiteController.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377042463128" ignored="false" />
     <file path="/index.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375285724312" ignored="false" />
     <file path="/layout.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1376945089298" ignored="false" />
     <file path="/menu.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377034143155" ignored="false" />
     <file path="/membres.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1375286708086" ignored="false" />
-    <file path="/Dummy.txt" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1381416937302" ignored="false" />
+    <file path="/Dummy.txt" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377508990651" ignored="false" />
     <file path="/membre.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377033853419" ignored="false" />
     <file path="/videos.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377035435193" ignored="false" />
     <file path="/video.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377032415599" ignored="false" />
@@ -47,8 +49,6 @@
     <file path="/IndexOfExtension.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377268892891" ignored="false" />
     <file path="/SubStringExtension.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377270610461" ignored="false" />
     <file path="/article.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1377270877439" ignored="false" />
-    <file path="/ArticleEditType.php" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1381322552705" ignored="false" />
-    <file path="/modifArticle.html.twig" changelist="fc054e20-59a2-496a-9f78-b9d733bfe4d3" time="1381322932137" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +72,96 @@
     <favorites_list name="DreamCommunity" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="WebsiteController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Controller/WebsiteController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="485" column="26" selection-start="17485" selection-end="17485" vertical-scroll-proportion="0.8428053">
+              <folding>
+                <element signature="e#603#2342#0" expanded="false" />
+                <element signature="e#652#1673#0" expanded="false" />
+                <element signature="e#1929#2044#0" expanded="false" />
+                <element signature="e#1929#2092#0" expanded="false" />
+                <element signature="e#2110#2335#0" expanded="false" />
+                <element signature="e#2179#2334#0" expanded="false" />
+                <element signature="e#2347#2947#0" expanded="false" />
+                <element signature="e#2445#2560#0" expanded="false" />
+                <element signature="e#2952#3302#0" expanded="false" />
+                <element signature="e#3012#3123#0" expanded="false" />
+                <element signature="e#3307#3852#0" expanded="false" />
+                <element signature="e#3369#3480#0" expanded="false" />
+                <element signature="e#3857#4862#0" expanded="false" />
+                <element signature="e#4149#4261#0" expanded="false" />
+                <element signature="e#4149#4307#0" expanded="false" />
+                <element signature="e#4373#4550#0" expanded="false" />
+                <element signature="e#4631#4855#0" expanded="false" />
+                <element signature="e#4701#4854#0" expanded="false" />
+                <element signature="e#4867#5586#0" expanded="false" />
+                <element signature="e#4963#5075#0" expanded="false" />
+                <element signature="e#5591#5726#0" expanded="false" />
+                <element signature="e#5731#5872#0" expanded="false" />
+                <element signature="e#5877#6012#0" expanded="false" />
+                <element signature="e#6018#6082#0" expanded="false" />
+                <element signature="e#6087#8084#0" expanded="false" />
+                <element signature="e#6541#7633#0" expanded="false" />
+                <element signature="e#6838#7623#0" expanded="false" />
+                <element signature="e#7906#8077#0" expanded="false" />
+                <element signature="e#7980#8076#0" expanded="false" />
+                <element signature="e#8089#8153#0" expanded="false" />
+                <element signature="e#8158#9493#0" expanded="false" />
+                <element signature="e#8220#8332#0" expanded="false" />
+                <element signature="e#8701#9264#0" expanded="false" />
+                <element signature="e#8788#9254#0" expanded="false" />
+                <element signature="e#9281#9486#0" expanded="false" />
+                <element signature="e#9355#9485#0" expanded="false" />
+                <element signature="e#9498#9562#0" expanded="false" />
+                <element signature="e#9567#9714#0" expanded="false" />
+                <element signature="e#9720#9784#0" expanded="false" />
+                <element signature="e#9789#10445#0" expanded="false" />
+                <element signature="e#9867#10439#0" expanded="false" />
+                <element signature="e#10083#10439#0" expanded="false" />
+                <element signature="e#10450#10514#0" expanded="false" />
+                <element signature="e#10519#11617#0" expanded="false" />
+                <element signature="e#10893#11427#0" expanded="false" />
+                <element signature="e#10980#11417#0" expanded="false" />
+                <element signature="e#11444#11610#0" expanded="false" />
+                <element signature="e#11519#11609#0" expanded="false" />
+                <element signature="e#11622#11686#0" expanded="false" />
+                <element signature="e#11691#11829#0" expanded="false" />
+                <element signature="e#11835#11887#0" expanded="false" />
+                <element signature="e#11892#14044#0" expanded="false" />
+                <element signature="e#12342#13629#0" expanded="false" />
+                <element signature="e#12639#13619#0" expanded="false" />
+                <element signature="e#13902#14037#0" expanded="false" />
+                <element signature="e#13977#14036#0" expanded="false" />
+                <element signature="e#14049#14101#0" expanded="false" />
+                <element signature="e#14106#15400#0" expanded="false" />
+                <element signature="e#14168#14279#0" expanded="false" />
+                <element signature="e#14649#15210#0" expanded="false" />
+                <element signature="e#14736#15200#0" expanded="false" />
+                <element signature="e#15227#15393#0" expanded="false" />
+                <element signature="e#15302#15392#0" expanded="false" />
+                <element signature="e#15457#17450#0" expanded="false" />
+                <element signature="e#15928#17035#0" expanded="false" />
+                <element signature="e#16225#17025#0" expanded="false" />
+                <element signature="e#17308#17443#0" expanded="false" />
+                <element signature="e#17384#17442#0" expanded="false" />
+                <element signature="e#17506#17555#0" expanded="false" />
+                <element signature="e#17561#17690#0" expanded="false" />
+                <element signature="e#17695#18230#0" expanded="false" />
+                <element signature="e#17755#17867#0" expanded="false" />
+                <element signature="e#18011#18223#0" expanded="false" />
+                <element signature="e#18079#18222#0" expanded="false" />
+                <element signature="e#18235#18791#0" expanded="false" />
+                <element signature="e#18303#18418#0" expanded="false" />
+                <element signature="e#18562#18784#0" expanded="false" />
+                <element signature="e#18638#18783#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -96,6 +185,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/video.html.twig" />
         <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Entity/Video.php" />
         <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Form/VideoType.php" />
         <option value="$PROJECT_DIR$/web/css/bootstrap.css" />
@@ -109,9 +200,7 @@
         <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/config/services.yml" />
         <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Twig/SubStringExtension.php" />
         <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Form/UserType.php" />
-        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Form/ArticleEditType.php" />
         <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Controller/WebsiteController.php" />
-        <option value="$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/modifArticle.html.twig" />
       </list>
     </option>
   </component>
@@ -228,6 +317,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Twig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DreamCommunity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DreamCommunity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DreamCommunity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebsiteBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -288,7 +403,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Form" />
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -314,7 +433,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
+              <option name="myItemId" value="Form" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -361,10 +480,6 @@
               <option name="myItemId" value="DreamCommunity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -377,15 +492,15 @@
     <property name="options.lastSelected" value="vcs.Git" />
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/config/parameters.yml" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -423,9 +538,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp\www\DreamCommunity\src\DreamCommunity\WebsiteBundle\Resources\views\Website" />
-      <recent name="C:\wamp\www\DreamCommunity\src\DreamCommunity\WebsiteBundle\Form" />
       <recent name="C:\wamp\www\DreamCommunity\src\DreamCommunity\WebsiteBundle\Twig" />
+      <recent name="C:\wamp\www\DreamCommunity\src\DreamCommunity\WebsiteBundle\Form" />
+      <recent name="C:\wamp\www\DreamCommunity\src\DreamCommunity\WebsiteBundle\Resources\views\Website" />
       <recent name="C:\wamp\www\DreamCommunity\vendor\sensio\generator-bundle\Sensio\Bundle\GeneratorBundle\Resources\skeleton\bundle" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -444,10 +559,10 @@
     <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application">
       <method />
     </configuration>
-    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug">
+    <configuration default="true" type="PhpHttpRequestRunConfigurationType" factoryName="PHP HTTP Request">
       <method />
     </configuration>
-    <configuration default="true" type="PhpHttpRequestRunConfigurationType" factoryName="PHP HTTP Request">
+    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug">
       <method />
     </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
@@ -469,14 +584,14 @@
       <JdkChoice value="FROM_MODULE" />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
@@ -539,15 +654,7 @@
       <created>1377272908393</created>
       <updated>1377272908394</updated>
     </task>
-    <task id="LOCAL-00006" summary="...">
-      <created>1377510295954</created>
-      <updated>1377510295954</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Modif articles">
-      <created>1381416956866</created>
-      <updated>1381416956866</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -574,14 +681,13 @@
     <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3249715" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3249715" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.249694" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1891065" sideWeight="0.6704675" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20685434" sideWeight="0.6704675" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20685434" sideWeight="0.6704675" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -592,6 +698,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -639,7 +746,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modif articles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Twig extensions" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -660,8 +767,6 @@
     <MESSAGE value="Del roles &amp; functions" />
     <MESSAGE value="Videos + ajax" />
     <MESSAGE value="Twig extensions" />
-    <MESSAGE value="..." />
-    <MESSAGE value="Modif articles" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -669,6 +774,26 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="46" selection-start="515" selection-end="515" vertical-scroll-proportion="0.3090909" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/_parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="33" selection-start="499" selection-end="499" vertical-scroll-proportion="0.29964748" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bootstrap.php.cache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.8603818" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="42" selection-start="399" selection-end="465" vertical-scroll-proportion="0.2596945" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/membre.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="27" selection-start="2007" selection-end="2114" vertical-scroll-proportion="0.8222491" />
@@ -679,6 +804,11 @@
         <state line="22" column="50" selection-start="509" selection-end="509" vertical-scroll-proportion="0.452237" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="44" selection-start="287" selection-end="287" vertical-scroll-proportion="0.1992966" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="22" selection-start="400" selection-end="400" vertical-scroll-proportion="0.21922626" />
@@ -686,139 +816,135 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Twig/SubStringExtension.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="8" selection-start="447" selection-end="447" vertical-scroll-proportion="0.49334946" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="4" selection-start="247" selection-end="396" vertical-scroll-proportion="0.0996483" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/articleVue.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="502" selection-end="552" vertical-scroll-proportion="0.2261185" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/article.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="50" selection-start="104" selection-end="104" vertical-scroll-proportion="0.061668683" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/TwigBundle/views/Exception/error.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Form/UserType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="32" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.5550181" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="27" selection-start="613" selection-end="613" vertical-scroll-proportion="0.4583822" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="26" selection-start="785" selection-end="785" vertical-scroll-proportion="0.06330598" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="216" selection-end="233" vertical-scroll-proportion="0.13950762" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Form/UserEditType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="8" selection-start="296" selection-end="435" vertical-scroll-proportion="0.2261185">
-          <folding>
-            <element signature="e#53#101#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Form/ArticleEditType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="48" selection-start="101" selection-end="101" vertical-scroll-proportion="0.08222491">
+        <state line="24" column="8" selection-start="447" selection-end="447" vertical-scroll-proportion="0.49334946">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/modifArticle.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="14" selection-start="119" selection-end="119" vertical-scroll-proportion="0.08222491">
+        <state line="5" column="4" selection-start="247" selection-end="396" vertical-scroll-proportion="0.0996483">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/articleVue.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="16" selection-start="502" selection-end="552" vertical-scroll-proportion="0.2261185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Resources/views/Website/article.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="50" selection-start="104" selection-end="104" vertical-scroll-proportion="0.061668683">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/TwigBundle/views/Exception/error.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Form/UserType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="32" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.5550181">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Form/UserEditType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DreamCommunity/WebsiteBundle/Controller/WebsiteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="436" column="40" selection-start="15548" selection-end="15548" vertical-scroll-proportion="0.19347037">
+        <state line="485" column="26" selection-start="17485" selection-end="17485" vertical-scroll-proportion="0.8428053">
           <folding>
-            <element signature="e#58#107#0" expanded="true" />
-            <element signature="e#658#2397#0" expanded="false" />
-            <element signature="e#707#1728#0" expanded="false" />
-            <element signature="e#1984#2099#0" expanded="false" />
-            <element signature="e#1984#2147#0" expanded="false" />
-            <element signature="e#2165#2390#0" expanded="false" />
-            <element signature="e#2234#2389#0" expanded="false" />
-            <element signature="e#2402#3002#0" expanded="false" />
-            <element signature="e#2500#2615#0" expanded="false" />
-            <element signature="e#3007#3357#0" expanded="false" />
-            <element signature="e#3067#3178#0" expanded="false" />
-            <element signature="e#3362#3907#0" expanded="false" />
-            <element signature="e#3424#3535#0" expanded="false" />
-            <element signature="e#3912#4917#0" expanded="false" />
-            <element signature="e#4204#4316#0" expanded="false" />
-            <element signature="e#4204#4362#0" expanded="false" />
-            <element signature="e#4428#4605#0" expanded="false" />
-            <element signature="e#4686#4910#0" expanded="false" />
-            <element signature="e#4756#4909#0" expanded="false" />
-            <element signature="e#4922#5641#0" expanded="false" />
-            <element signature="e#5018#5130#0" expanded="false" />
-            <element signature="e#5646#5781#0" expanded="false" />
-            <element signature="e#5786#5927#0" expanded="false" />
-            <element signature="e#5932#6067#0" expanded="false" />
-            <element signature="e#6073#6137#0" expanded="false" />
-            <element signature="e#6142#8139#0" expanded="false" />
-            <element signature="e#7961#8132#0" expanded="false" />
-            <element signature="e#8035#8131#0" expanded="false" />
-            <element signature="e#8144#8208#0" expanded="false" />
-            <element signature="e#8213#9548#0" expanded="false" />
-            <element signature="e#8275#8387#0" expanded="false" />
-            <element signature="e#9336#9541#0" expanded="false" />
-            <element signature="e#9410#9540#0" expanded="false" />
-            <element signature="e#9553#9617#0" expanded="false" />
-            <element signature="e#9622#9769#0" expanded="false" />
-            <element signature="e#9775#9839#0" expanded="false" />
-            <element signature="e#9844#10500#0" expanded="false" />
-            <element signature="e#10505#10569#0" expanded="false" />
-            <element signature="e#10574#11672#0" expanded="false" />
-            <element signature="e#11499#11665#0" expanded="false" />
-            <element signature="e#11574#11664#0" expanded="false" />
-            <element signature="e#11677#11741#0" expanded="false" />
-            <element signature="e#11746#11884#0" expanded="false" />
-            <element signature="e#11890#11942#0" expanded="false" />
-            <element signature="e#11947#14099#0" expanded="false" />
-            <element signature="e#13957#14092#0" expanded="false" />
-            <element signature="e#14032#14091#0" expanded="false" />
-            <element signature="e#14104#14156#0" expanded="false" />
-            <element signature="e#14161#15455#0" expanded="false" />
-            <element signature="e#14223#14334#0" expanded="false" />
-            <element signature="e#15282#15448#0" expanded="false" />
-            <element signature="e#15357#15447#0" expanded="false" />
-            <element signature="e#15512#17505#0" expanded="false" />
-            <element signature="e#17439#17497#0" expanded="false" />
-            <element signature="e#18849#18978#0" expanded="false" />
-            <element signature="e#18983#19518#0" expanded="false" />
-            <element signature="e#19043#19155#0" expanded="false" />
-            <element signature="e#19299#19511#0" expanded="false" />
-            <element signature="e#19367#19510#0" expanded="false" />
-            <element signature="e#19523#20079#0" expanded="false" />
-            <element signature="e#19591#19706#0" expanded="false" />
-            <element signature="e#19850#20072#0" expanded="false" />
-            <element signature="e#19926#20071#0" expanded="false" />
+            <element signature="e#603#2342#0" expanded="false" />
+            <element signature="e#652#1673#0" expanded="false" />
+            <element signature="e#1929#2044#0" expanded="false" />
+            <element signature="e#1929#2092#0" expanded="false" />
+            <element signature="e#2110#2335#0" expanded="false" />
+            <element signature="e#2179#2334#0" expanded="false" />
+            <element signature="e#2347#2947#0" expanded="false" />
+            <element signature="e#2445#2560#0" expanded="false" />
+            <element signature="e#2952#3302#0" expanded="false" />
+            <element signature="e#3012#3123#0" expanded="false" />
+            <element signature="e#3307#3852#0" expanded="false" />
+            <element signature="e#3369#3480#0" expanded="false" />
+            <element signature="e#3857#4862#0" expanded="false" />
+            <element signature="e#4149#4261#0" expanded="false" />
+            <element signature="e#4149#4307#0" expanded="false" />
+            <element signature="e#4373#4550#0" expanded="false" />
+            <element signature="e#4631#4855#0" expanded="false" />
+            <element signature="e#4701#4854#0" expanded="false" />
+            <element signature="e#4867#5586#0" expanded="false" />
+            <element signature="e#4963#5075#0" expanded="false" />
+            <element signature="e#5591#5726#0" expanded="false" />
+            <element signature="e#5731#5872#0" expanded="false" />
+            <element signature="e#5877#6012#0" expanded="false" />
+            <element signature="e#6018#6082#0" expanded="false" />
+            <element signature="e#6087#8084#0" expanded="false" />
+            <element signature="e#6541#7633#0" expanded="false" />
+            <element signature="e#6838#7623#0" expanded="false" />
+            <element signature="e#7906#8077#0" expanded="false" />
+            <element signature="e#7980#8076#0" expanded="false" />
+            <element signature="e#8089#8153#0" expanded="false" />
+            <element signature="e#8158#9493#0" expanded="false" />
+            <element signature="e#8220#8332#0" expanded="false" />
+            <element signature="e#8701#9264#0" expanded="false" />
+            <element signature="e#8788#9254#0" expanded="false" />
+            <element signature="e#9281#9486#0" expanded="false" />
+            <element signature="e#9355#9485#0" expanded="false" />
+            <element signature="e#9498#9562#0" expanded="false" />
+            <element signature="e#9567#9714#0" expanded="false" />
+            <element signature="e#9720#9784#0" expanded="false" />
+            <element signature="e#9789#10445#0" expanded="false" />
+            <element signature="e#9867#10439#0" expanded="false" />
+            <element signature="e#10083#10439#0" expanded="false" />
+            <element signature="e#10450#10514#0" expanded="false" />
+            <element signature="e#10519#11617#0" expanded="false" />
+            <element signature="e#10893#11427#0" expanded="false" />
+            <element signature="e#10980#11417#0" expanded="false" />
+            <element signature="e#11444#11610#0" expanded="false" />
+            <element signature="e#11519#11609#0" expanded="false" />
+            <element signature="e#11622#11686#0" expanded="false" />
+            <element signature="e#11691#11829#0" expanded="false" />
+            <element signature="e#11835#11887#0" expanded="false" />
+            <element signature="e#11892#14044#0" expanded="false" />
+            <element signature="e#12342#13629#0" expanded="false" />
+            <element signature="e#12639#13619#0" expanded="false" />
+            <element signature="e#13902#14037#0" expanded="false" />
+            <element signature="e#13977#14036#0" expanded="false" />
+            <element signature="e#14049#14101#0" expanded="false" />
+            <element signature="e#14106#15400#0" expanded="false" />
+            <element signature="e#14168#14279#0" expanded="false" />
+            <element signature="e#14649#15210#0" expanded="false" />
+            <element signature="e#14736#15200#0" expanded="false" />
+            <element signature="e#15227#15393#0" expanded="false" />
+            <element signature="e#15302#15392#0" expanded="false" />
+            <element signature="e#15457#17450#0" expanded="false" />
+            <element signature="e#15928#17035#0" expanded="false" />
+            <element signature="e#16225#17025#0" expanded="false" />
+            <element signature="e#17308#17443#0" expanded="false" />
+            <element signature="e#17384#17442#0" expanded="false" />
+            <element signature="e#17506#17555#0" expanded="false" />
+            <element signature="e#17561#17690#0" expanded="false" />
+            <element signature="e#17695#18230#0" expanded="false" />
+            <element signature="e#17755#17867#0" expanded="false" />
+            <element signature="e#18011#18223#0" expanded="false" />
+            <element signature="e#18079#18222#0" expanded="false" />
+            <element signature="e#18235#18791#0" expanded="false" />
+            <element signature="e#18303#18418#0" expanded="false" />
+            <element signature="e#18562#18784#0" expanded="false" />
+            <element signature="e#18638#18783#0" expanded="false" />
           </folding>
         </state>
       </provider>
